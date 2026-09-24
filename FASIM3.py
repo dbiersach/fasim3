@@ -849,7 +849,13 @@ def DrawMap() -> None:
     )
     pygame.draw.rect(Canvas, (14, 20, 31), (*P(0, 351), L(640), L(129)))
     DrawText(Font, "FASIM III", DefHiLiteClr, 8, 357)
-    DrawText(Font, "Yellow: fire units    Green: supply units    Node 1: ATP", DefTextClr, 95, 357)
+    DrawText(
+        Font,
+        f"Yellow: fire units ({MaxFU} total)    Green: supply units ({MaxSU} total)    Node 1: ATP",
+        DefTextClr,
+        95,
+        357,
+    )
     for I, Line in enumerate(LastLines):
         DrawText(SmallFont, Line, DefTextClr, 8, 377 + I * 14)
     DrawText(

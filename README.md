@@ -249,8 +249,10 @@ the battle unfolds:
 
 The top line shows the simulation clock, the running total of rounds fired,
 and whether the run is paused. The panel at the bottom starts with a legend
-line, `Yellow: fire units  Green: supply units  Node 1: ATP`, which is
-fixed text reminding you what the colors mean and which node is the depot.
+line, `Yellow: fire units (6 total)  Green: supply units (3 total)
+Node 1: ATP`, which reminds you what the colors mean, how many of each unit
+the model has, and which node is the depot. A truck that is on its way to
+the depot is not drawn, so the map can show fewer trucks than the total.
 Below it are the four most recent lines of the event log, so you can read
 what just happened while you watch the map. The window is resizable and
 the map scales to fit.
