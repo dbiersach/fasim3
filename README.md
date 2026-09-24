@@ -35,14 +35,28 @@ events, each stamped with the moment it will happen, and it jumps the clock
 straight from one event to the next. Nothing changes between events, so
 there is nothing to compute there.
 
-FASIM III has eleven kinds of event. A fire unit starts a mission, a fire
-unit finishes one, a unit departs a node, a unit arrives at a node, two
-units link up and begin resupply, and so on. Handling one event usually
-schedules one or two more. Starting a fire mission schedules its end;
-arriving at a node schedules the departure for the next one. The event
-queue is a linked list kept in time order, and the main loop simply pops
-the earliest event, advances the clock to its time, and runs the matching
-handler.
+FASIM III has eleven kinds of event. Each has a short code that appears in
+the source and in the event log:
+
+| Code    | Name                       | What happens when it is handled                                                        |
+| ------- | -------------------------- | -------------------------------------------------------------------------------------- |
+| `FM`    | Fire Mission               | A fire unit starts shooting. The mission size is drawn and its end is scheduled.       |
+| `EOM`   | End Of Mission             | The mission ends. The unit either schedules its next mission or requests orders.       |
+| `FURQO` | Fire Unit Request Orders   | A fire unit asks for a destination, a supply unit, and a meeting place.                |
+| `FUDN`  | Fire Unit Depart Node      | A fire unit leaves a node for the next one on its route.                               |
+| `FUAN`  | Fire Unit Arrive Node      | A fire unit reaches the next node and decides what to do there.                        |
+| `SUDN`  | Supply Unit Depart Node    | A supply unit leaves a node for the next one on its route.                             |
+| `SUAN`  | Supply Unit Arrive Node    | A supply unit reaches the next node and decides what to do there.                      |
+| `SRS`   | Start ReSupply             | The two units have met. The transfer begins and its end is scheduled.                  |
+| `ERS`   | End ReSupply               | The transfer ends. Rounds change hands and both units are released.                    |
+| `SATP`  | Start trip to ATP          | A low supply unit sets out for the ammunition transfer point.                          |
+| `EATP`  | End trip to ATP            | The supply unit reaches the depot, refills, and becomes available again.               |
+
+Handling one event usually schedules one or two more. Starting a fire
+mission schedules its end; arriving at a node schedules the departure for
+the next one. The event queue is a linked list kept in time order, and the
+main loop simply pops the earliest event, advances the clock to its time,
+and runs the matching handler.
 
 The run stops after the first event whose time is beyond the horizon of
 1000 time units, so the final clock in a report is slightly past 1000. An
@@ -280,7 +294,22 @@ Clock:235.7707-> SU:1(18) depart for Node:16 Arrive:245.2548
 Clock:245.2548-> FU:3(16) and SU:1(16) linked. -> Begin Resupply
 ```
 
-The notation `FU:5(14)` means fire unit 5 at node 14. The log records
+The notation `FU:5(14)` means fire unit 5 at node 14. Other shorthand in
+the log:
+
+| Shorthand              | Meaning                                                              |
+| ---------------------- | -------------------------------------------------------------------- |
+| `FU:n(k)` / `SU:n(k)`  | Fire unit or supply unit number n, currently at node k               |
+| `Orders>`              | The result of a fire unit's request for orders                       |
+| `ReSply Typ:I/F/P`     | The rendezvous plan chosen: initial, final, or point                 |
+| `Node:k`               | The meeting node for the resupply                                    |
+| `Dstn:k`               | The fire unit's destination node                                     |
+| `Resch FURQO at t`     | No supply unit was free; the request is rescheduled for time t       |
+| `PDetect high`         | The detection score crossed its threshold                            |
+| `Sply low`             | Ammunition dropped below the resupply threshold                      |
+| `Arrive:t`             | The scheduled arrival time for a departure just logged               |
+
+The log records
 every mission, every request for orders and the plan it chose, every
 departure, every resupply, and every trip to the depot. It is not exactly
 one line per event: an arrival that immediately schedules the next
