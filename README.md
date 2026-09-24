@@ -66,9 +66,8 @@ dead ends.
 
 Node 1 is special: it is the ammunition transfer point, or ATP, the depot
 where supply trucks refill. Nothing on the map marks it, which is why the
-legend line above the event log always reads `Node 1: ATP`. The depot's
-location is fixed in the two handlers that send a truck home and refill
-it; it is not one of the constants at the top of the file.
+legend line above the event log always names it. The constant `ATPNode` at
+the top of the file sets which node is the depot.
 
 Travel time along a road is its straight-line length times a distance
 factor. That number is a route cost shared by both kinds of unit. When a
@@ -249,10 +248,11 @@ the battle unfolds:
 
 The top line shows the simulation clock, the running total of rounds fired,
 and whether the run is paused. The panel at the bottom starts with a legend
-line, `Yellow: fire units (6 total)  Green: supply units (3 total)
-Node 1: ATP`, which reminds you what the colors mean, how many of each unit
-the model has, and which node is the depot. A truck that is on its way to
-the depot is not drawn, so the map can show fewer trucks than the total.
+line, with `Yellow: fire units (6 total)` in yellow, `Green: supply units
+(3 total)` in green, and `Ammo Transfer Point: Node 1` in the text color.
+It reminds you what the colors mean, how many of each unit the model has,
+and which node is the depot. A truck that is on its way to the depot is not
+drawn, so the map can show fewer trucks than the total.
 Below it are the four most recent lines of the event log, so you can read
 what just happened while you watch the map. The window is resizable and
 the map scales to fit.
@@ -345,6 +345,7 @@ The constants at the top of `FASIM3.py` are the knobs. A few worth turning:
 - `Alpha` shifts the choice between unit and point rendezvous. It must be
   raised above zero for the point plan to be chosen at all.
 - `MaxFUPDetect` sets how long a gun can keep firing before it must move.
+- `ATPNode` moves the depot to a different node.
 
 Run several seeds for each configuration and compare the spread of total
 rounds, not just one number, because a single map can favor one plan by

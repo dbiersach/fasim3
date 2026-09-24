@@ -20,6 +20,7 @@ MaxFU = 6
 MaxFUSply = 373
 MinAccFUSply = 0.2105
 MaxSU = 3
+ATPNode = 1
 MaxSUSply = 333
 MinAccSUSply = 0.1997
 MaxFUPDetect = 0.9
@@ -645,7 +646,7 @@ def ProcERS(CurEvent: EventRec) -> None:
 
 def ProcSATP(CurEvent: EventRec) -> None:
     SUn = CurEvent.UnitID
-    NewEvent = EventRec(Clock + MinTime[SU[SUn].Loc][1] / MaxSUSpeed, EATP, SUn)
+    NewEvent = EventRec(Clock + MinTime[SU[SUn].Loc][ATPNode] / MaxSUSpeed, EATP, SUn)
     PrintLine(SUStr(SUn) + " sply low.  Going to ATP! Arrive:" + RealStr(NewEvent.Time))
     Schedule(NewEvent)
     AtATP.add(SUn)
@@ -657,7 +658,7 @@ def ProcEATP(CurEvent: EventRec) -> None:
     Unit.Allocated = False
     Unit.Status = SplyWaiting
     Unit.Sply = MaxSUSply
-    Unit.Loc = 1
+    Unit.Loc = ATPNode
     DeletePath(Unit.Dstn)
     Unit.Dstn = PathRec(Unit.Loc)
     Unit.ReSplyLoc = Unit.ReSplyFU = 0
@@ -849,13 +850,15 @@ def DrawMap() -> None:
     )
     pygame.draw.rect(Canvas, (14, 20, 31), (*P(0, 351), L(640), L(129)))
     DrawText(Font, "FASIM III", DefHiLiteClr, 8, 357)
-    DrawText(
-        Font,
-        f"Yellow: fire units ({MaxFU} total)    Green: supply units ({MaxSU} total)    Node 1: ATP",
-        DefTextClr,
-        95,
-        357,
-    )
+    LegendX = 95
+    for Text, Color in (
+        (f"Yellow: fire units ({MaxFU} total)", DefFUClr),
+        (f"Green: supply units ({MaxSU} total)", DefSUClr),
+        (f"Ammo Transfer Point: Node {ATPNode}", DefTextClr),
+    ):
+        Label = Font.render(Text, True, Color)
+        Canvas.blit(Label, P(LegendX, 357))
+        LegendX += Label.get_width() / Scale + 16
     for I, Line in enumerate(LastLines):
         DrawText(SmallFont, Line, DefTextClr, 8, 377 + I * 14)
     DrawText(
