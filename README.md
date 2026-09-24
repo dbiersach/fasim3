@@ -2,27 +2,29 @@
 
 FASIM III is a discrete-event simulation of artillery units fighting a
 long battle on a road network. Six fire units shoot at targets, run low on
-ammunition, and call for resupply. Three supply units drive out to meet
-them, hand over rounds, and go back to a depot when their own trucks are
-empty. The program plays the whole thing out on an animated map and then
-writes a report that says how every unit spent its time and how many rounds
-were fired in total.
+ammunition or draw too much attention, and call for orders. Three supply
+units drive out to meet them, hand over rounds, and go back to a depot when
+their own load falls below about 20 percent. The program plays the whole
+thing out on an animated map and then writes a report with activity
+counters for every unit and the total number of rounds fired.
 
-The point of the exercise is the last number. An artillery battery only
-matters when it is firing, and every hour it spends driving, waiting, or
-loading ammunition is an hour it is not firing. The simulation lets you ask
+The point of the exercise is the last number. A gun only contributes when
+it is firing, and every hour it spends driving, waiting, or loading
+ammunition is an hour it is not firing. The simulation lets you ask
 questions like these and get an answer in minutes instead of in the field:
 
 - Should a supply truck drive to where the guns are now, or to where they
   are about to move?
 - Should the two units meet somewhere along the guns' route instead?
-- What happens to total output if the depot is moved, if there are more
-  trucks, or if the trucks are faster?
-- How much time do the guns lose waiting for ammunition, and which units
-  wait the most?
+- What happens to total output if there are more trucks, if the trucks are
+  faster, or if the guns can stay in place longer?
+- How often do the guns end up waiting for a truck?
 
 Changing a few constants at the top of `FASIM3.py` changes the answer, and
-the report tells you whether the change helped.
+the report tells you whether the change helped. Total rounds fired is the
+model's measure of throughput. It says nothing about what the rounds hit,
+so it is a measure of how busy the guns were kept, not of how effective
+they were.
 
 ## What "discrete-event simulation" means
 
@@ -40,7 +42,12 @@ schedules one or two more. Starting a fire mission schedules its end;
 arriving at a node schedules the departure for the next one. The event
 queue is a linked list kept in time order, and the main loop simply pops
 the earliest event, advances the clock to its time, and runs the matching
-handler until the clock passes 1000 time units.
+handler.
+
+The run stops after the first event whose time is beyond the horizon of
+1000 time units, so the final clock in a report is slightly past 1000. An
+activity that starts near the end is credited in full when it is scheduled,
+even if part of it lies past the horizon.
 
 Because each event is processed in strict time order, the whole run is
 deterministic. Give the program the same seed and it produces the same
@@ -48,17 +55,26 @@ battle, event for event, whether it draws the map or not.
 
 ## The battlefield
 
-The map is a network of 20 nodes scattered at random across a 640 by 480
-grid. You can think of the nodes as towns or crossroads. Each node is
-connected to its three nearest neighbors, measured by travel time, and the
-connections run in both directions, so the result is a road network with
-loops and dead ends rather than a neat grid. Node 1 is special: it is the
-ammunition transfer point, or ATP, the depot where supply trucks refill.
+The map is a network of 20 nodes scattered at random across the map area,
+which spans x coordinates 10 through 629 and y coordinates 30 through 339
+of a 640 by 480 logical display. You can think of the nodes as towns or
+crossroads. Each node is connected to its three nearest neighbors, measured
+by travel time, and every connection runs in both directions. Because a
+node can also be one of another node's three nearest, some nodes end up
+with four or five roads, but none has fewer than three, so there are no
+dead ends.
+
+Node 1 is special: it is the ammunition transfer point, or ATP, the depot
+where supply trucks refill. Nothing on the map marks it, which is why the
+legend line above the event log always reads `Node 1: ATP`. The depot's
+location is fixed in the two handlers that send a truck home and refill
+it; it is not one of the constants at the top of the file.
 
 Travel time along a road is its straight-line length times a distance
-factor. Fire units are slow and supply units are about two and a half times
-faster, so the same road takes each kind of unit a different amount of
-time.
+factor. That number is a route cost shared by both kinds of unit. When a
+unit actually moves, the cost is divided by its speed, and supply units are
+about two and a half times faster than fire units, so the same road takes
+each kind of unit a different amount of time.
 
 Units never cut across country. They move from node to node along the
 network, and to get anywhere they need a route.
@@ -72,10 +88,10 @@ whose best distance is settled, repeatedly picks the unsettled node with
 the smallest tentative distance, settles it, and relaxes the distances of
 its neighbors. When the destination is settled, the algorithm follows the
 predecessor links backward to build the route as a linked list of nodes,
-each carrying the cumulative travel time to reach it.
+each carrying the cumulative route cost to reach it.
 
 The same algorithm is run once for every pair of nodes at startup to fill
-a 20 by 20 table of minimum travel times. That table is what the decision
+a 20 by 20 table of minimum route costs. That table is what the decision
 logic consults when it compares possible meeting places, because looking up
 a number is far cheaper than rebuilding a route each time the question
 comes up.
@@ -84,65 +100,112 @@ comes up.
 
 **Fire units** are the guns. Each one starts with a full load of 373
 rounds, a random starting node, and a fire mission scheduled at time zero.
-A mission fires a number of rounds drawn from a normal distribution with a
-mean of 14 and a standard deviation of 4, capped at whatever the unit still
-has. Firing runs at four rounds per time unit, so the mission's duration
-follows from its size. After a mission the unit waits a random interval,
-exponentially distributed with a mean of 10, and fires again.
+A mission fires a whole number of rounds based on a normal draw with a mean
+of 14 and a spread of 4, truncated to an integer and clamped between zero
+and whatever the unit still has. Firing runs at four rounds per time unit,
+so the mission's duration follows from its size. After a mission the unit
+waits a whole number of time units based on an exponential draw with a
+mean of 10, and fires again. Because both draws are truncated to integers,
+the actual values are not exactly the named continuous distributions.
 
 Firing has a cost beyond ammunition. Each mission raises the unit's
-detection score by an amount that depends on how far the mission strayed
-from the average size. When that score crosses 0.9, the enemy is assumed to
-have located the battery and it must move to a new node, chosen at random.
-Moving resets the score to zero.
+detection score by the size of the mission's deviation from the mean,
+divided by the mean. A mission of exactly average size adds nothing. This
+score is a simple heuristic that stands in for the enemy noticing a
+battery; there is no simulated enemy, no attack, and no losses. When the
+score crosses 0.9 the unit is considered located and must move to a new
+node, chosen at random. Moving resets the score to zero.
 
 **Supply units** are the trucks. Each starts with 333 rounds at a random
 node, waiting to be called. A truck can be allocated to only one fire unit
-at a time. When a truck's load drops below about 20 percent of capacity it
-drives to the ATP at node 1, refills completely, and becomes available
-again.
+at a time. When a truck's load drops below about 20 percent of capacity
+after a transfer, it goes to the ATP at node 1, refills completely, and
+becomes available again.
 
-## Asking for resupply
+The program does not say what a "fire unit" or "supply unit" stands for in
+real terms. A fire unit might be one gun, a section, or a whole battery,
+and a supply unit is a modeled resource rather than a particular truck.
+Treat both as abstract units.
+
+## Asking for orders
 
 After every mission a fire unit checks two things: whether its detection
-score is too high and whether its ammunition has dropped below about 21
+score is above 0.9 and whether its ammunition has dropped below about 21
 percent of a full load. If either is true, it requests orders. This is the
 heart of the simulation.
 
-The request handler first settles where the fire unit is going. If it has
-no destination it picks a new node at random and computes the shortest
-route there. Then, for every supply truck that is not already allocated, it
-evaluates three possible rendezvous plans:
+Both triggers lead to the same handler, and that handler always pairs the
+fire unit with a truck. A unit that has been detected but still has plenty
+of ammunition therefore does not simply move; it is assigned a truck and a
+meeting place first, and if every truck is busy it keeps re-requesting
+orders while sitting where it was detected. In the default run this is the
+common case: every request is triggered by detection rather than by
+low ammunition.
+
+The handler first settles where the fire unit is going. If it has no
+destination it picks a new node at random and computes the shortest route
+there. Then, for every truck that is not already allocated, it evaluates
+three possible rendezvous plans:
 
 - **Type I, initial.** The truck drives to the fire unit's current node and
-  resupplies it there before it moves.
+  resupplies it there before it moves. This plan is skipped for a unit
+  whose detection score is too high.
 - **Type F, final.** Both units head for the fire unit's destination and
   meet there.
-- **Type P, point.** The two units meet at some intermediate node on the
-  fire unit's route. The handler checks every node on the route and keeps
-  the one both units can reach soonest.
+- **Type P, point.** The two units meet at a node on the fire unit's
+  route. The candidates are every node on the route except the final
+  destination. The starting node is included unless the unit has been
+  detected. The handler keeps the candidate both units can reach soonest.
 
-For each plan the meeting time is the larger of the two units' travel
-times, because the resupply cannot start until both have arrived. A fire
-unit whose detection score is too high is never asked to sit still for a
-type I meeting. The constant `Alpha` weighs unit resupply against point
-resupply; at its default of zero the unit plans win, and raising it makes
-the program favor meeting along the way. The truck and plan with the
-earliest meeting time get the job.
+For each plan the meeting cost is the larger of the two units' route
+costs, because the resupply cannot start until both have arrived. The
+comparison uses the raw route costs from the table, not the costs divided
+by each unit's speed. Since trucks move about two and a half times faster
+than guns, the plan with the lowest raw cost is not always the one with the
+earliest real meeting time. This is a deliberate simplification: the
+selection is a route-cost heuristic, not an exact minimization of arrival
+time.
 
-If every truck is busy, the request is put back on the queue just after
-the next event that might free one, and the fire unit keeps trying.
+The constant `Alpha` weighs the unit plans (I and F) against the point
+plan (P). At its default of zero the unit plans always win, so point
+resupply never happens in a default run and the report's point-resupply
+counters stay at zero. Raising `Alpha` makes the program favor meeting
+along the way. Among the trucks, the one whose chosen plan has the lowest
+cost gets the job.
+
+Candidate costs are compared against the simulation horizon as a starting
+bound, so a plan whose cost is not strictly below the horizon is never
+accepted. With the default map and horizon that never matters, but a very
+short `--max-clock` can leave a free truck unassigned.
+
+If no truck can be assigned, the request is rescheduled a tiny fraction
+after the next event in the queue that is not itself an orders request.
+That event does not necessarily free a truck, so a fire unit may retry many
+times before it is served.
 
 ## Resupply and the return to the depot
 
 When both units are at the meeting node they link up. Transfer speed
 depends on the plan: three rounds per time unit for a unit-to-unit meeting
-and four for a point meeting. The transfer lasts as long as it takes to
-fill the fire unit's shortfall, after which the truck hands over whatever
-it can. If the truck runs dry it gives what it has. A truck that ends up
-below its threshold heads straight for the ATP; otherwise it is released
-and waits for the next call. The fire unit, now restocked, continues to its
-destination or schedules its next mission.
+and four for a point meeting. The transfer duration is the fire unit's
+entire shortfall divided by that rate, and it is fixed at the start. Only
+when the transfer ends does the truck's own load come into play: it hands
+over the shortfall if it can, or everything it has left if it cannot. A
+partial delivery therefore takes as long as a full one. Keep this
+convention in mind when comparing truck capacities, because it makes
+small trucks look slower than a pure transfer-rate model would.
+
+A truck that ends the transfer below its threshold heads straight for the
+ATP; otherwise it is released and waits, wherever it is, for the next call.
+The fire unit, now restocked, continues to its destination or schedules
+its next mission.
+
+The trip to the depot is not simulated node by node like the outbound trip.
+The program schedules a single arrival event using the shortest route cost
+to node 1 divided by the truck's speed, hides the truck from the map in the
+meantime, and on arrival places it at node 1 with a full load. The depot
+has unlimited ammunition, loading takes no time, and there is no queue.
+This return trip is not added to the truck's moving-time counter.
 
 ## Random numbers you can reproduce
 
@@ -159,10 +222,17 @@ transform, which turns two uniforms into one standard normal using a square
 root, a logarithm, and a cosine.
 
 The seed is the only source of randomness. The default is 5, and the
-`--seed` option changes it. Two runs with the same seed produce identical
-node layouts, identical unit placements, identical mission sizes, and
-identical reports, which is what makes it possible to change one constant
-and attribute the difference in the results to that change alone.
+`--seed` option changes it. Two runs with the same seed and the same
+constants produce identical node layouts, identical unit placements,
+identical mission sizes, and identical reports.
+
+Changing a constant is a different matter. Every random draw comes from
+the same stream, so a change that alters the order of events also alters
+which draw goes to which decision. The map and the starting positions stay
+the same for a given seed, but the mission sizes and intervals after the
+first divergence do not. A comparison of one seed before and after a change
+is a fair comparison of two battles, not of the same battle with one thing
+different.
 
 ## The animation
 
@@ -174,11 +244,16 @@ the battle unfolds:
 - Fire units are yellow gun symbols with the unit's number below.
 - Supply units are green truck symbols with the unit's number below.
 - A unit in transit is drawn at the midpoint of the road it is on.
+- A truck on its way to the depot is not drawn until it reappears at
+  node 1.
 
 The top line shows the simulation clock, the running total of rounds fired,
-and whether the run is paused. The panel at the bottom shows the four most
-recent lines of the event log, so you can read what just happened while
-you watch the map. The window is resizable and the map scales to fit.
+and whether the run is paused. The panel at the bottom starts with a legend
+line, `Yellow: fire units  Green: supply units  Node 1: ATP`, which is
+fixed text reminding you what the colors mean and which node is the depot.
+Below it are the four most recent lines of the event log, so you can read
+what just happened while you watch the map. The window is resizable and
+the map scales to fit.
 
 Keyboard controls:
 
@@ -194,7 +269,7 @@ run watched at full speed are the same battle.
 ## The output report
 
 Every run writes `SimRun.Doc`, a plain text file. The first part is the
-event log, one line per event, each stamped with the clock time:
+event log, each line stamped with the clock time:
 
 ```text
 Clock:233.5077-> Fire Mission! FU:5(14) Rounds:19
@@ -205,10 +280,13 @@ Clock:245.2548-> FU:3(16) and SU:1(16) linked. -> Begin Resupply
 
 The notation `FU:5(14)` means fire unit 5 at node 14. The log records
 every mission, every request for orders and the plan it chose, every
-departure and arrival, every resupply, and every trip to the depot.
+departure, every resupply, and every trip to the depot. It is not exactly
+one line per event: an arrival that immediately schedules the next
+departure logs only the departure, and an end of mission that trips both
+triggers logs a line for each.
 
 The second part is the statistics. For each fire unit and each supply unit
-the report lists the total time spent in each of six states:
+the report lists a time counter for each of six states:
 
 | State         | Meaning                                                    |
 | ------------- | ---------------------------------------------------------- |
@@ -228,7 +306,30 @@ Total Number of Rounds Fired: 2300
 ```
 
 Compare that figure across runs to see whether a change to the supply plan
-made the battery more or less productive.
+made the guns more or less productive.
+
+### Reading the counters carefully
+
+The six state times are activity counters, not a complete account of where
+each unit's time went. They do not add up to the length of the run, and
+they are not meant to. In the default run, fire unit 3's six counters sum
+to about 408 time units out of a run of just over 1000. Several kinds of
+time are simply not counted:
+
+- Time spent repeatedly re-requesting orders while every truck is busy.
+- Some of the idle time before a mission, in particular after a resupply
+  or after arriving at a new node, is scheduled without being added to
+  `FMWaiting`.
+- A truck's trip back to the depot.
+- Any wait still open when the run ends.
+
+Durations are also credited when an activity is scheduled, not when it
+completes, so a mission or move that starts near the end of the run counts
+in full. Use the counters to compare runs with one another, and use the
+mission and resupply counts and the total rounds as the primary results.
+Do not divide a counter by the run length and call it a utilization
+percentage, and do not read a zero in `SplyWaiting` as proof that a unit
+never waited for a truck.
 
 ## Experimenting
 
@@ -239,12 +340,39 @@ The constants at the top of `FASIM3.py` are the knobs. A few worth turning:
 - `MinAccFUSply` and `MinAccSUSply` set the ammunition levels at which a
   gun asks for resupply and a truck returns to the depot.
 - `UnitResplyRate` and `PointResplyRate` set how fast ammunition transfers.
-- `Alpha` shifts the choice between unit and point rendezvous.
-- `MaxFUPDetect` sets how long a battery can keep firing before it must move.
+- `Alpha` shifts the choice between unit and point rendezvous. It must be
+  raised above zero for the point plan to be chosen at all.
+- `MaxFUPDetect` sets how long a gun can keep firing before it must move.
 
-Run the same seed before and after a change, and compare the total rounds
-and the waiting times. Then try several seeds, because a single map can
-favor one plan by accident.
+Run several seeds for each configuration and compare the spread of total
+rounds, not just one number, because a single map can favor one plan by
+accident and because a changed constant reshuffles the random draws, as
+described above.
+
+## What the model leaves out
+
+FASIM III is a study of one idea, mobile resupply that meets the guns
+where they are or where they are going, and it keeps everything else
+simple. The following are assumptions, not findings:
+
+- Fire units relocate to a random node rather than to a chosen position.
+- One low-ammunition threshold and one detection threshold apply to every
+  fire unit.
+- Being detected always leads to a resupply pairing, even with ammunition
+  to spare.
+- The detection score depends only on mission size, not on time in place,
+  terrain, or enemy activity.
+- Trucks are always about two and a half times faster than guns, on every
+  road.
+- The depot never runs out and loads a truck instantly.
+- Transfer rates are constant regardless of equipment or conditions.
+- All six fire units are identical, and so are all three trucks.
+
+Those simplifications make the model easy to reason about and fast to
+run. They also mean that a result here is a statement about the model, and
+turning it into a statement about real artillery would require deciding
+what the units represent and checking the assumptions against real
+equipment and practice.
 
 ## Setup
 
