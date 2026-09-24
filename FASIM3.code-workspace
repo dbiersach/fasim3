@@ -1,0 +1,96 @@
+{
+    "folders": [{ "path": "." }],
+    "settings": {
+        "editor.fontSize": 18,
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnPaste": true,
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports.ruff": "explicit"
+        },
+        "files.autoSave": "afterDelay",
+        "files.exclude": { "**/__pycache__": true },
+        "python.defaultInterpreterPath": "${workspaceFolder}/.venv",
+        "python.analysis.typeCheckingMode": "basic",
+        "python.analysis.autoImportCompletions": true,
+        "python.analysis.completeFunctionParens": true,
+        "python.terminal.activateEnvironment": true,
+        "python.terminal.executeInFileDir": false,
+        "python.testing.pytestEnabled": true,
+        "python.testing.unittestEnabled": false,
+        "python.testing.pytestArgs": ["tests"],
+        "terminal.integrated.fontSize": 18,
+        "terminal.integrated.enablePersistentSessions": false,
+        "workbench.colorCustomizations": { "tab.activeBorder": "#3cff00" }
+    },
+    "extensions": {
+        "recommendations": [
+            "ms-python.python",
+            "ms-python.vscode-pylance",
+            "ms-python.debugpy",
+            "charliermarsh.ruff"
+        ]
+    },
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "name": "FASIM3: Pygame",
+                "type": "debugpy",
+                "request": "launch",
+                "program": "${workspaceFolder}/FASIM3.py",
+                "cwd": "${workspaceFolder}",
+                "console": "integratedTerminal",
+                "justMyCode": true
+            },
+            {
+                "name": "FASIM3: Headless",
+                "type": "debugpy",
+                "request": "launch",
+                "program": "${workspaceFolder}/FASIM3.py",
+                "args": ["--headless"],
+                "cwd": "${workspaceFolder}",
+                "console": "integratedTerminal",
+                "justMyCode": true
+            }
+        ]
+    },
+    "tasks": {
+        "version": "2.0.0",
+        "tasks": [
+            {
+                "label": "uv sync",
+                "type": "process",
+                "command": "uv",
+                "args": ["sync"],
+                "options": { "cwd": "${workspaceFolder}" },
+                "problemMatcher": []
+            },
+            {
+                "label": "FASIM3: Run",
+                "type": "process",
+                "command": "uv",
+                "args": ["run", "FASIM3.py"],
+                "options": { "cwd": "${workspaceFolder}" },
+                "problemMatcher": []
+            },
+            {
+                "label": "FASIM3: Test",
+                "type": "process",
+                "command": "uv",
+                "args": ["run", "pytest"],
+                "options": { "cwd": "${workspaceFolder}" },
+                "group": "test",
+                "problemMatcher": []
+            },
+            {
+                "label": "FASIM3: Lint",
+                "type": "process",
+                "command": "uv",
+                "args": ["run", "ruff", "check", "."],
+                "options": { "cwd": "${workspaceFolder}" },
+                "problemMatcher": []
+            }
+        ]
+    }
+}

@@ -1,0 +1,1216 @@
+Clock:0.0000-> Fire Mission! FU:1(5) Rounds:17
+Clock:0.0000-> Fire Mission! FU:2(19) Rounds:16
+Clock:0.0000-> Fire Mission! FU:3(13) Rounds:15
+Clock:0.0000-> Fire Mission! FU:4(16) Rounds:12
+Clock:0.0000-> Fire Mission! FU:5(6) Rounds:10
+Clock:0.0000-> Fire Mission! FU:6(8) Rounds:8
+Clock:2.0000-> EOM for FU:6(8)
+Clock:2.5000-> EOM for FU:5(6)
+Clock:3.0000-> EOM for FU:4(16)
+Clock:3.7500-> EOM for FU:3(13)
+Clock:3.7500-> Fire Mission! FU:3(13) Rounds:12
+Clock:4.0000-> EOM for FU:2(19)
+Clock:4.2500-> EOM for FU:1(5)
+Clock:6.7500-> EOM for FU:3(13)
+Clock:7.2500-> Fire Mission! FU:1(5) Rounds:18
+Clock:7.5000-> Fire Mission! FU:5(6) Rounds:9
+Clock:8.0000-> Fire Mission! FU:6(8) Rounds:13
+Clock:8.0000-> Fire Mission! FU:4(16) Rounds:14
+Clock:9.7500-> EOM for FU:5(6)
+Clock:11.0000-> Fire Mission! FU:2(19) Rounds:15
+Clock:11.2500-> EOM for FU:6(8)
+Clock:11.5000-> EOM for FU:4(16)
+Clock:11.7500-> EOM for FU:1(5)
+Clock:11.7500-> Fire Mission! FU:5(6) Rounds:17
+Clock:14.7500-> EOM for FU:2(19)
+Clock:15.2500-> Fire Mission! FU:6(8) Rounds:17
+Clock:15.7500-> Fire Mission! FU:3(13) Rounds:16
+Clock:16.0000-> EOM for FU:5(6)
+Clock:17.7500-> Fire Mission! FU:2(19) Rounds:12
+Clock:19.5000-> EOM for FU:6(8)
+Clock:19.5000-> Fire Mission! FU:6(8) Rounds:20
+Clock:19.7500-> Fire Mission! FU:1(5) Rounds:10
+Clock:19.7500-> EOM for FU:3(13)
+Clock:20.7500-> EOM for FU:2(19)
+Clock:22.0000-> Fire Mission! FU:5(6) Rounds:9
+Clock:22.2500-> EOM for FU:1(5)
+Clock:23.2500-> Fire Mission! FU:1(5) Rounds:15
+Clock:23.7500-> Fire Mission! FU:2(19) Rounds:20
+Clock:24.2500-> EOM for FU:5(6) PDetect high -> FURQO
+Clock:24.2500-> FU:5(6) Orders> ReSply Typ:F Node:14 Dstn:14 SU:1(4)
+Clock:24.2500-> FU:5(6) depart for Node:10 Arrive:44.5122
+Clock:24.2500-> SU:1(4) depart for Node:17 Arrive:31.0291
+Clock:24.5000-> EOM for FU:6(8) PDetect high -> FURQO
+Clock:24.5000-> FU:6(8) Orders> ReSply Typ:F Node:10 Dstn:10 SU:2(9)
+Clock:24.5000-> FU:6(8) depart for Node:5 Arrive:44.3436
+Clock:24.5000-> SU:2(9) depart for Node:14 Arrive:34.0866
+Clock:27.0000-> EOM for FU:1(5)
+Clock:28.7500-> EOM for FU:2(19)
+Clock:29.0000-> Fire Mission! FU:1(5) Rounds:12
+Clock:30.7500-> Fire Mission! FU:2(19) Rounds:16
+Clock:31.0291-> SU:1(17) depart for Node:14 Arrive:40.1751
+Clock:32.0000-> EOM for FU:1(5) PDetect high -> FURQO
+Clock:32.0000-> FU:1(5) Orders> ReSply Typ:F Node:16 Dstn:16 SU:3(8)
+Clock:32.0000-> FU:1(5) depart for Node:16 Arrive:57.9926
+Clock:32.0000-> SU:3(8) depart for Node:5 Arrive:39.9367
+Clock:34.0866-> SU:2(14) depart for Node:3 Arrive:47.6347
+Clock:34.7500-> EOM for FU:2(19) PDetect high -> FURQO
+Clock:34.7500-> FU:2(19) Orders> No free SUs! Resch FURQO at 36.5000
+Clock:36.5000-> Fire Mission! FU:4(16) Rounds:12
+Clock:36.5000-> FU:2(19) Orders> No free SUs! Resch FURQO at 39.5000
+Clock:39.5000-> EOM for FU:4(16)
+Clock:39.5000-> FU:2(19) Orders> No free SUs! Resch FURQO at 39.9367
+Clock:39.9367-> SU:3(5) depart for Node:16 Arrive:50.3327
+Clock:39.9367-> FU:2(19) Orders> No free SUs! Resch FURQO at 40.1751
+Clock:40.1751-> SU:1(14) waiting for FU:5(6)
+Clock:40.1751-> FU:2(19) Orders> No free SUs! Resch FURQO at 44.3436
+Clock:44.3436-> FU:6(5) depart for Node:16 Arrive:70.3361
+Clock:44.3436-> FU:2(19) Orders> No free SUs! Resch FURQO at 44.5122
+Clock:44.5122-> FU:5(10) depart for Node:2 Arrive:66.0043
+Clock:44.5122-> FU:2(19) Orders> No free SUs! Resch FURQO at 44.7500
+Clock:44.7500-> Fire Mission! FU:3(13) Rounds:19
+Clock:44.7500-> FU:2(19) Orders> No free SUs! Resch FURQO at 46.5000
+Clock:46.5000-> Fire Mission! FU:4(16) Rounds:20
+Clock:46.5000-> FU:2(19) Orders> No free SUs! Resch FURQO at 47.6347
+Clock:47.6347-> SU:2(3) depart for Node:2 Arrive:56.8858
+Clock:47.6347-> FU:2(19) Orders> No free SUs! Resch FURQO at 49.5000
+Clock:49.5000-> EOM for FU:3(13)
+Clock:49.5000-> FU:2(19) Orders> No free SUs! Resch FURQO at 50.3327
+Clock:50.3327-> SU:3(16) waiting for FU:1(5)
+Clock:50.3327-> FU:2(19) Orders> No free SUs! Resch FURQO at 51.5000
+Clock:51.5000-> EOM for FU:4(16)
+Clock:51.5000-> FU:2(19) Orders> No free SUs! Resch FURQO at 54.5000
+Clock:54.5000-> Fire Mission! FU:3(13) Rounds:19
+Clock:54.5000-> Fire Mission! FU:4(16) Rounds:11
+Clock:54.5000-> FU:2(19) Orders> No free SUs! Resch FURQO at 56.8858
+Clock:56.8858-> SU:2(2) depart for Node:10 Arrive:65.4818
+Clock:56.8858-> FU:2(19) Orders> No free SUs! Resch FURQO at 57.2500
+Clock:57.2500-> EOM for FU:4(16) PDetect high -> FURQO
+Clock:57.2500-> FU:4(16) Orders> No free SUs! Resch FURQO at 57.9926
+Clock:57.2500-> FU:2(19) Orders> No free SUs! Resch FURQO at 57.9926
+Clock:57.9926-> FU:1(16) and SU:3(16) linked. -> Begin Resupply
+Clock:57.9926-> FU:4(16) Orders> No free SUs! Resch FURQO at 59.2500
+Clock:57.9926-> FU:2(19) Orders> No free SUs! Resch FURQO at 59.2500
+Clock:59.2500-> EOM for FU:3(13) PDetect high -> FURQO
+Clock:59.2500-> FU:3(13) Orders> No free SUs! Resch FURQO at 65.4818
+Clock:59.2500-> FU:4(16) Orders> No free SUs! Resch FURQO at 65.4818
+Clock:59.2500-> FU:2(19) Orders> No free SUs! Resch FURQO at 65.4818
+Clock:65.4818-> SU:2(10) waiting for FU:6(5)
+Clock:65.4818-> FU:3(13) Orders> No free SUs! Resch FURQO at 66.0043
+Clock:65.4818-> FU:4(16) Orders> No free SUs! Resch FURQO at 66.0043
+Clock:65.4818-> FU:2(19) Orders> No free SUs! Resch FURQO at 66.0043
+Clock:66.0043-> FU:5(2) depart for Node:3 Arrive:89.1342
+Clock:66.0043-> FU:3(13) Orders> No free SUs! Resch FURQO at 70.3361
+Clock:66.0043-> FU:4(16) Orders> No free SUs! Resch FURQO at 70.3361
+Clock:66.0043-> FU:2(19) Orders> No free SUs! Resch FURQO at 70.3361
+Clock:70.3361-> FU:6(16) depart for Node:18 Arrive:94.0487
+Clock:70.3361-> FU:3(13) Orders> No free SUs! Resch FURQO at 81.9926
+Clock:70.3361-> FU:4(16) Orders> No free SUs! Resch FURQO at 81.9926
+Clock:70.3361-> FU:2(19) Orders> No free SUs! Resch FURQO at 81.9926
+Clock:81.9926-> FU:1(16) and SU:3(16) -> END Resupply
+Clock:81.9926-> FU:3(13) Orders> ReSply Typ:F Node:16 Dstn:16 SU:3(16)
+Clock:81.9926-> SU:3(16) waiting for FU:3(13)
+Clock:81.9926-> FU:4(16) Orders> No free SUs! Resch FURQO at 81.9926
+Clock:81.9926-> FU:2(19) Orders> No free SUs! Resch FURQO at 81.9926
+Clock:81.9926-> FU:3(13) depart for Node:5 Arrive:107.3706
+Clock:81.9926-> FU:4(16) Orders> No free SUs! Resch FURQO at 89.1342
+Clock:81.9926-> FU:2(19) Orders> No free SUs! Resch FURQO at 89.1342
+Clock:89.1342-> FU:5(3) depart for Node:14 Arrive:123.0077
+Clock:89.1342-> FU:4(16) Orders> No free SUs! Resch FURQO at 89.9926
+Clock:89.1342-> FU:2(19) Orders> No free SUs! Resch FURQO at 89.9926
+Clock:89.9926-> Fire Mission! FU:1(16) Rounds:15
+Clock:89.9926-> FU:4(16) Orders> No free SUs! Resch FURQO at 93.7426
+Clock:89.9926-> FU:2(19) Orders> No free SUs! Resch FURQO at 93.7426
+Clock:93.7426-> EOM for FU:1(16)
+Clock:93.7426-> FU:4(16) Orders> No free SUs! Resch FURQO at 94.0487
+Clock:93.7426-> FU:2(19) Orders> No free SUs! Resch FURQO at 94.0487
+Clock:94.0487-> FU:6(18) depart for Node:2 Arrive:124.6981
+Clock:94.0487-> FU:4(16) Orders> No free SUs! Resch FURQO at 99.7426
+Clock:94.0487-> FU:2(19) Orders> No free SUs! Resch FURQO at 99.7426
+Clock:99.7426-> Fire Mission! FU:1(16) Rounds:16
+Clock:99.7426-> FU:4(16) Orders> No free SUs! Resch FURQO at 103.7426
+Clock:99.7426-> FU:2(19) Orders> No free SUs! Resch FURQO at 103.7426
+Clock:103.7426-> EOM for FU:1(16)
+Clock:103.7426-> FU:4(16) Orders> No free SUs! Resch FURQO at 107.3706
+Clock:103.7426-> FU:2(19) Orders> No free SUs! Resch FURQO at 107.3706
+Clock:107.3706-> FU:3(5) depart for Node:16 Arrive:133.3632
+Clock:107.3706-> FU:4(16) Orders> No free SUs! Resch FURQO at 117.7426
+Clock:107.3706-> FU:2(19) Orders> No free SUs! Resch FURQO at 117.7426
+Clock:117.7426-> Fire Mission! FU:1(16) Rounds:14
+Clock:117.7426-> FU:4(16) Orders> No free SUs! Resch FURQO at 121.2426
+Clock:117.7426-> FU:2(19) Orders> No free SUs! Resch FURQO at 121.2426
+Clock:121.2426-> EOM for FU:1(16)
+Clock:121.2426-> FU:4(16) Orders> No free SUs! Resch FURQO at 123.0077
+Clock:121.2426-> FU:2(19) Orders> No free SUs! Resch FURQO at 123.0077
+Clock:123.0077-> FU:5(14) and SU:1(14) linked. -> Begin Resupply
+Clock:123.0077-> FU:4(16) Orders> No free SUs! Resch FURQO at 123.2426
+Clock:123.0077-> FU:2(19) Orders> No free SUs! Resch FURQO at 123.2426
+Clock:123.2426-> Fire Mission! FU:1(16) Rounds:16
+Clock:123.2426-> FU:4(16) Orders> No free SUs! Resch FURQO at 124.6981
+Clock:123.2426-> FU:2(19) Orders> No free SUs! Resch FURQO at 124.6981
+Clock:124.6981-> FU:6(2) depart for Node:10 Arrive:146.1902
+Clock:124.6981-> FU:4(16) Orders> No free SUs! Resch FURQO at 127.2426
+Clock:124.6981-> FU:2(19) Orders> No free SUs! Resch FURQO at 127.2426
+Clock:127.2426-> EOM for FU:1(16)
+Clock:127.2426-> FU:4(16) Orders> No free SUs! Resch FURQO at 133.3632
+Clock:127.2426-> FU:2(19) Orders> No free SUs! Resch FURQO at 133.3632
+Clock:133.3632-> FU:3(16) and SU:3(16) linked. -> Begin Resupply
+Clock:133.3632-> FU:4(16) Orders> No free SUs! Resch FURQO at 138.0077
+Clock:133.3632-> FU:2(19) Orders> No free SUs! Resch FURQO at 138.0077
+Clock:138.0077-> FU:5(14) and SU:1(14) -> END Resupply
+Clock:138.0077-> FU:4(16) Orders> ReSply Typ:F Node:6 Dstn:6 SU:1(14)
+Clock:138.0077-> FU:2(19) Orders> No free SUs! Resch FURQO at 138.0077
+Clock:138.0077-> FU:4(16) depart for Node:18 Arrive:161.7203
+Clock:138.0077-> SU:1(14) depart for Node:3 Arrive:151.5558
+Clock:138.0077-> FU:2(19) Orders> No free SUs! Resch FURQO at 141.0077
+Clock:141.0077-> Fire Mission! FU:5(14) Rounds:14
+Clock:141.0077-> FU:2(19) Orders> No free SUs! Resch FURQO at 144.5077
+Clock:144.5077-> EOM for FU:5(14)
+Clock:144.5077-> FU:2(19) Orders> No free SUs! Resch FURQO at 146.1902
+Clock:146.1902-> FU:6(10) and SU:2(10) linked. -> Begin Resupply
+Clock:146.1902-> FU:2(19) Orders> No free SUs! Resch FURQO at 151.5558
+Clock:151.5558-> SU:1(3) depart for Node:2 Arrive:160.8069
+Clock:151.5558-> FU:2(19) Orders> No free SUs! Resch FURQO at 152.5077
+Clock:152.5077-> Fire Mission! FU:5(14) Rounds:16
+Clock:152.5077-> FU:2(19) Orders> No free SUs! Resch FURQO at 156.5077
+Clock:156.5077-> EOM for FU:5(14)
+Clock:156.5077-> FU:2(19) Orders> No free SUs! Resch FURQO at 158.2426
+Clock:158.2426-> Fire Mission! FU:1(16) Rounds:14
+Clock:158.2426-> FU:2(19) Orders> No free SUs! Resch FURQO at 160.3632
+Clock:160.3632-> FU:3(16) and SU:3(16) -> END Resupply
+Clock:160.3632-> FU:2(19) Orders> ReSply Typ:F Node:2 Dstn:2 SU:3(16)
+Clock:160.3632-> FU:2(19) depart for Node:8 Arrive:179.1444
+Clock:160.3632-> SU:3(16) depart for Node:18 Arrive:169.8473
+Clock:160.5077-> Fire Mission! FU:5(14) Rounds:14
+Clock:160.8069-> SU:1(2) depart for Node:10 Arrive:169.4029
+Clock:161.7203-> FU:4(18) depart for Node:6 Arrive:198.1859
+Clock:161.7426-> EOM for FU:1(16)
+Clock:164.0077-> EOM for FU:5(14)
+Clock:165.5235-> FU:6(10) and SU:2(10) -> END Resupply
+Clock:169.4029-> SU:1(10) depart for Node:6 Arrive:177.5070
+Clock:169.8473-> SU:3(18) depart for Node:2 Arrive:182.1059
+Clock:177.5070-> SU:1(6) waiting for FU:4(18)
+Clock:179.1444-> FU:2(8) depart for Node:5 Arrive:198.9880
+Clock:179.3632-> Fire Mission! FU:3(16) Rounds:19
+Clock:179.5235-> Fire Mission! FU:6(10) Rounds:21
+Clock:182.1059-> SU:3(2) waiting for FU:2(8)
+Clock:183.7426-> Fire Mission! FU:1(16) Rounds:17
+Clock:184.1132-> EOM for FU:3(16)
+Clock:184.7735-> EOM for FU:6(10)
+Clock:187.1132-> Fire Mission! FU:3(16) Rounds:9
+Clock:187.7735-> Fire Mission! FU:6(10) Rounds:9
+Clock:187.9926-> EOM for FU:1(16)
+Clock:189.3632-> EOM for FU:3(16)
+Clock:189.9926-> Fire Mission! FU:1(16) Rounds:14
+Clock:190.0235-> EOM for FU:6(10)
+Clock:193.0235-> Fire Mission! FU:6(10) Rounds:14
+Clock:193.4926-> EOM for FU:1(16)
+Clock:195.4926-> Fire Mission! FU:1(16) Rounds:20
+Clock:196.5235-> EOM for FU:6(10)
+Clock:198.1859-> FU:4(6) and SU:1(6) linked. -> Begin Resupply
+Clock:198.9880-> FU:2(5) depart for Node:16 Arrive:224.9805
+Clock:199.3632-> Fire Mission! FU:3(16) Rounds:19
+Clock:200.4926-> EOM for FU:1(16) PDetect high -> FURQO
+Clock:200.4926-> FU:1(16) Orders> ReSply Typ:F Node:8 Dstn:8 SU:2(10)
+Clock:200.4926-> FU:1(16) depart for Node:5 Arrive:226.4851
+Clock:200.4926-> SU:2(10) depart for Node:2 Arrive:209.0886
+Clock:200.5235-> Fire Mission! FU:6(10) Rounds:14
+Clock:204.0235-> EOM for FU:6(10)
+Clock:204.1132-> EOM for FU:3(16) PDetect high -> FURQO
+Clock:204.1132-> FU:3(16) Orders> No free SUs! Resch FURQO at 205.0077
+Clock:205.0077-> Fire Mission! FU:5(14) Rounds:18
+Clock:205.0077-> FU:3(16) Orders> No free SUs! Resch FURQO at 209.0886
+Clock:209.0886-> SU:2(2) depart for Node:18 Arrive:221.3471
+Clock:209.0886-> FU:3(16) Orders> No free SUs! Resch FURQO at 209.5077
+Clock:209.5077-> EOM for FU:5(14)
+Clock:209.5077-> FU:3(16) Orders> No free SUs! Resch FURQO at 215.0235
+Clock:215.0235-> Fire Mission! FU:6(10) Rounds:13
+Clock:215.0235-> FU:3(16) Orders> No free SUs! Resch FURQO at 218.2735
+Clock:218.2735-> EOM for FU:6(10) PDetect high -> FURQO
+Clock:218.2735-> FU:6(10) Orders> No free SUs! Resch FURQO at 221.1859
+Clock:218.2735-> FU:3(16) Orders> No free SUs! Resch FURQO at 221.1859
+Clock:221.1859-> FU:4(6) and SU:1(6) -> END Resupply
+Clock:221.1859-> FU:6(10) Orders> ReSply Typ:F Node:16 Dstn:16 SU:1(6)
+Clock:221.1859-> FU:3(16) Orders> No free SUs! Resch FURQO at 221.1859
+Clock:221.1859-> FU:6(10) depart for Node:2 Arrive:242.6779
+Clock:221.1859-> SU:1(6) depart for Node:18 Arrive:235.7707
+Clock:221.1859-> FU:3(16) Orders> No free SUs! Resch FURQO at 221.3471
+Clock:221.3471-> SU:2(18) depart for Node:16 Arrive:230.8313
+Clock:221.3471-> FU:3(16) Orders> No free SUs! Resch FURQO at 224.9805
+Clock:224.9805-> FU:2(16) depart for Node:18 Arrive:248.6932
+Clock:224.9805-> FU:3(16) Orders> No free SUs! Resch FURQO at 226.4851
+Clock:226.4851-> FU:1(5) depart for Node:8 Arrive:246.3287
+Clock:226.4851-> FU:3(16) Orders> No free SUs! Resch FURQO at 230.8313
+Clock:230.8313-> SU:2(16) depart for Node:5 Arrive:241.2273
+Clock:230.8313-> FU:3(16) Orders> No free SUs! Resch FURQO at 233.5077
+Clock:233.5077-> Fire Mission! FU:5(14) Rounds:19
+Clock:233.5077-> FU:3(16) Orders> No free SUs! Resch FURQO at 235.7707
+Clock:235.7707-> SU:1(18) depart for Node:16 Arrive:245.2548
+Clock:235.7707-> FU:3(16) Orders> No free SUs! Resch FURQO at 238.2577
+Clock:238.2577-> EOM for FU:5(14)
+Clock:238.2577-> FU:3(16) Orders> No free SUs! Resch FURQO at 239.1859
+Clock:239.1859-> Fire Mission! FU:4(6) Rounds:18
+Clock:239.1859-> FU:3(16) Orders> No free SUs! Resch FURQO at 241.2273
+Clock:241.2273-> SU:2(5) depart for Node:8 Arrive:249.1640
+Clock:241.2273-> FU:3(16) Orders> No free SUs! Resch FURQO at 242.6779
+Clock:242.6779-> FU:6(2) depart for Node:18 Arrive:273.3273
+Clock:242.6779-> FU:3(16) Orders> No free SUs! Resch FURQO at 243.6859
+Clock:243.6859-> EOM for FU:4(6)
+Clock:243.6859-> FU:3(16) Orders> No free SUs! Resch FURQO at 245.2548
+Clock:245.2548-> SU:1(16) waiting for FU:6(2)
+Clock:245.2548-> FU:3(16) Orders> No free SUs! Resch FURQO at 245.6859
+Clock:245.6859-> Fire Mission! FU:4(6) Rounds:8
+Clock:245.6859-> FU:3(16) Orders> No free SUs! Resch FURQO at 246.2577
+Clock:246.2577-> Fire Mission! FU:5(14) Rounds:11
+Clock:246.2577-> FU:3(16) Orders> No free SUs! Resch FURQO at 246.3287
+Clock:246.3287-> FU:1(8) waiting for SU:2(5)
+Clock:246.3287-> FU:3(16) Orders> No free SUs! Resch FURQO at 247.6859
+Clock:247.6859-> EOM for FU:4(6)
+Clock:247.6859-> FU:3(16) Orders> No free SUs! Resch FURQO at 248.6932
+Clock:248.6932-> FU:2(18) depart for Node:2 Arrive:279.3426
+Clock:248.6932-> FU:3(16) Orders> No free SUs! Resch FURQO at 249.0077
+Clock:249.0077-> EOM for FU:5(14) PDetect high -> FURQO
+Clock:249.0077-> FU:5(14) Orders> No free SUs! Resch FURQO at 249.1640
+Clock:249.0077-> FU:3(16) Orders> No free SUs! Resch FURQO at 249.1640
+Clock:249.1640-> FU:1(8) and SU:2(8) linked. -> Begin Resupply
+Clock:249.1640-> FU:5(14) Orders> No free SUs! Resch FURQO at 253.6859
+Clock:249.1640-> FU:3(16) Orders> No free SUs! Resch FURQO at 253.6859
+Clock:253.6859-> Fire Mission! FU:4(6) Rounds:13
+Clock:253.6859-> FU:5(14) Orders> No free SUs! Resch FURQO at 256.9359
+Clock:253.6859-> FU:3(16) Orders> No free SUs! Resch FURQO at 256.9359
+Clock:256.9359-> EOM for FU:4(6)
+Clock:256.9359-> FU:5(14) Orders> No free SUs! Resch FURQO at 272.9359
+Clock:256.9359-> FU:3(16) Orders> No free SUs! Resch FURQO at 272.9359
+Clock:272.9359-> Fire Mission! FU:4(6) Rounds:12
+Clock:272.9359-> FU:5(14) Orders> No free SUs! Resch FURQO at 273.3273
+Clock:272.9359-> FU:3(16) Orders> No free SUs! Resch FURQO at 273.3273
+Clock:273.3273-> FU:6(18) depart for Node:16 Arrive:297.0399
+Clock:273.3273-> FU:5(14) Orders> No free SUs! Resch FURQO at 275.9359
+Clock:273.3273-> FU:3(16) Orders> No free SUs! Resch FURQO at 275.9359
+Clock:275.9359-> EOM for FU:4(6) PDetect high -> FURQO
+Clock:275.9359-> FU:4(6) Orders> No free SUs! Resch FURQO at 279.3426
+Clock:275.9359-> FU:5(14) Orders> No free SUs! Resch FURQO at 279.3426
+Clock:275.9359-> FU:3(16) Orders> No free SUs! Resch FURQO at 279.3426
+Clock:279.3426-> FU:2(2) and SU:3(2) linked. -> Begin Resupply
+Clock:279.3426-> FU:4(6) Orders> No free SUs! Resch FURQO at 291.1640
+Clock:279.3426-> FU:5(14) Orders> No free SUs! Resch FURQO at 291.1640
+Clock:279.3426-> FU:3(16) Orders> No free SUs! Resch FURQO at 291.1640
+Clock:291.1640-> FU:1(8) and SU:2(8) -> END Resupply
+Clock:291.1640-> FU:4(6) Orders> ReSply Typ:F Node:12 Dstn:12 SU:2(8)
+Clock:291.1640-> FU:5(14) Orders> No free SUs! Resch FURQO at 291.1640
+Clock:291.1640-> FU:3(16) Orders> No free SUs! Resch FURQO at 291.1640
+Clock:291.1640-> FU:4(6) depart for Node:12 Arrive:297.1047
+Clock:291.1640-> SU:2(8) depart for Node:5 Arrive:299.1006
+Clock:291.1640-> FU:5(14) Orders> No free SUs! Resch FURQO at 297.0399
+Clock:291.1640-> FU:3(16) Orders> No free SUs! Resch FURQO at 297.0399
+Clock:297.0399-> FU:6(16) and SU:1(16) linked. -> Begin Resupply
+Clock:297.0399-> FU:5(14) Orders> No free SUs! Resch FURQO at 297.1047
+Clock:297.0399-> FU:3(16) Orders> No free SUs! Resch FURQO at 297.1047
+Clock:297.1047-> FU:4(12) waiting for SU:2(8)
+Clock:297.1047-> FU:5(14) Orders> No free SUs! Resch FURQO at 299.1006
+Clock:297.1047-> FU:3(16) Orders> No free SUs! Resch FURQO at 299.1006
+Clock:299.1006-> SU:2(5) depart for Node:16 Arrive:309.4967
+Clock:299.1006-> FU:5(14) Orders> No free SUs! Resch FURQO at 305.6759
+Clock:299.1006-> FU:3(16) Orders> No free SUs! Resch FURQO at 305.6759
+Clock:305.6759-> FU:2(2) and SU:3(2) -> END Resupply
+Clock:305.6759-> FU:5(14) Orders> ReSply Typ:F Node:2 Dstn:2 SU:3(2)
+Clock:305.6759-> SU:3(2) waiting for FU:5(14)
+Clock:305.6759-> FU:3(16) Orders> No free SUs! Resch FURQO at 305.6759
+Clock:305.6759-> FU:5(14) depart for Node:3 Arrive:339.5494
+Clock:305.6759-> FU:3(16) Orders> No free SUs! Resch FURQO at 309.4967
+Clock:309.4967-> SU:2(16) depart for Node:18 Arrive:318.9808
+Clock:309.4967-> FU:3(16) Orders> No free SUs! Resch FURQO at 311.6759
+Clock:311.6759-> Fire Mission! FU:2(2) Rounds:16
+Clock:311.6759-> FU:3(16) Orders> No free SUs! Resch FURQO at 315.6759
+Clock:315.6759-> EOM for FU:2(2)
+Clock:315.6759-> FU:3(16) Orders> No free SUs! Resch FURQO at 318.9808
+Clock:318.9808-> SU:2(18) depart for Node:6 Arrive:333.5656
+Clock:318.9808-> FU:3(16) Orders> No free SUs! Resch FURQO at 320.7066
+Clock:320.7066-> FU:6(16) and SU:1(16) -> END Resupply
+Clock:320.7066-> FU:3(16) Orders> ReSply Typ:F Node:8 Dstn:8 SU:1(16)
+Clock:320.7066-> FU:3(16) depart for Node:5 Arrive:346.6992
+Clock:320.7066-> SU:1(16) depart for Node:5 Arrive:331.1026
+Clock:323.6759-> Fire Mission! FU:2(2) Rounds:12
+Clock:324.7066-> Fire Mission! FU:6(16) Rounds:10
+Clock:326.6759-> EOM for FU:2(2)
+Clock:327.2066-> EOM for FU:6(16)
+Clock:331.1026-> SU:1(5) depart for Node:8 Arrive:339.0393
+Clock:333.5656-> SU:2(6) depart for Node:12 Arrive:335.9416
+Clock:335.2066-> Fire Mission! FU:6(16) Rounds:14
+Clock:335.9416-> FU:4(12) and SU:2(12) linked. -> Begin Resupply
+Clock:336.6759-> Fire Mission! FU:2(2) Rounds:9
+Clock:338.7066-> EOM for FU:6(16)
+Clock:338.9259-> EOM for FU:2(2)
+Clock:339.0393-> SU:1(8) waiting for FU:3(16)
+Clock:339.5494-> FU:5(3) depart for Node:2 Arrive:362.6794
+Clock:341.7066-> Fire Mission! FU:6(16) Rounds:20
+Clock:341.9259-> Fire Mission! FU:2(2) Rounds:15
+Clock:345.6759-> EOM for FU:2(2)
+Clock:346.6992-> FU:3(5) depart for Node:8 Arrive:366.5427
+Clock:346.7066-> EOM for FU:6(16)
+Clock:347.1640-> Fire Mission! FU:1(8) Rounds:15
+Clock:350.6759-> Fire Mission! FU:2(2) Rounds:19
+Clock:350.9140-> EOM for FU:1(8)
+Clock:351.7066-> Fire Mission! FU:6(16) Rounds:23
+Clock:351.9140-> Fire Mission! FU:1(8) Rounds:15
+Clock:352.9416-> FU:4(12) and SU:2(12) -> END Resupply
+Clock:355.4259-> EOM for FU:2(2) PDetect high -> FURQO
+Clock:355.4259-> FU:2(2) Orders> ReSply Typ:F Node:1 Dstn:1 SU:2(12)
+Clock:355.4259-> FU:2(2) depart for Node:18 Arrive:386.0753
+Clock:355.4259-> SU:2(12) depart for Node:6 Arrive:357.8020
+Clock:355.6640-> EOM for FU:1(8)
+Clock:357.4566-> EOM for FU:6(16) PDetect high -> FURQO
+Clock:357.4566-> FU:6(16) Orders> No free SUs! Resch FURQO at 357.8020
+Clock:357.8020-> SU:2(6) depart for Node:18 Arrive:372.3868
+Clock:357.8020-> FU:6(16) Orders> No free SUs! Resch FURQO at 362.6794
+Clock:362.6794-> FU:5(2) and SU:3(2) linked. -> Begin Resupply
+Clock:362.6794-> FU:6(16) Orders> No free SUs! Resch FURQO at 366.5427
+Clock:366.5427-> FU:3(8) and SU:1(8) linked. -> Begin Resupply
+Clock:366.5427-> FU:6(16) Orders> No free SUs! Resch FURQO at 372.3868
+Clock:372.3868-> SU:2(18) depart for Node:16 Arrive:381.8709
+Clock:372.3868-> FU:6(16) Orders> No free SUs! Resch FURQO at 377.9416
+Clock:377.9416-> Fire Mission! FU:4(12) Rounds:11
+Clock:377.9416-> FU:6(16) Orders> No free SUs! Resch FURQO at 380.6916
+Clock:380.6916-> EOM for FU:4(12)
+Clock:380.6916-> FU:6(16) Orders> No free SUs! Resch FURQO at 381.8709
+Clock:381.8709-> SU:2(16) depart for Node:5 Arrive:392.2669
+Clock:381.8709-> FU:6(16) Orders> No free SUs! Resch FURQO at 382.2094
+Clock:382.2094-> FU:3(8) and SU:1(8) -> END Resupply
+Clock:382.2094-> FU:6(16) Orders> ReSply Typ:F Node:18 Dstn:18 SU:1(8)
+Clock:382.2094-> FU:6(16) depart for Node:18 Arrive:405.9220
+Clock:382.2094-> SU:1(8) depart for Node:5 Arrive:390.1460
+Clock:386.0753-> FU:2(18) depart for Node:16 Arrive:409.7879
+Clock:390.1460-> SU:1(5) depart for Node:16 Arrive:400.5421
+Clock:390.2094-> Fire Mission! FU:3(8) Rounds:19
+Clock:392.2669-> SU:2(5) depart for Node:8 Arrive:400.2036
+Clock:393.3460-> FU:5(2) and SU:3(2) -> END Resupply
+Clock:393.3460-> SU:3(2) sply low.  Going to ATP! Arrive:451.6334
+Clock:394.9594-> EOM for FU:3(8)
+Clock:400.2036-> SU:2(8) depart for Node:19 Arrive:407.7154
+Clock:400.5421-> SU:1(16) depart for Node:18 Arrive:410.0262
+Clock:400.9594-> Fire Mission! FU:3(8) Rounds:7
+Clock:402.7094-> EOM for FU:3(8)
+Clock:404.6916-> Fire Mission! FU:4(12) Rounds:15
+Clock:405.9220-> FU:6(18) waiting for SU:1(16)
+Clock:407.7154-> SU:2(19) depart for Node:1 Arrive:418.4156
+Clock:408.4416-> EOM for FU:4(12)
+Clock:409.6640-> Fire Mission! FU:1(8) Rounds:7
+Clock:409.7879-> FU:2(16) depart for Node:5 Arrive:435.7805
+Clock:410.0262-> FU:6(18) and SU:1(18) linked. -> Begin Resupply
+Clock:410.3460-> Fire Mission! FU:5(2) Rounds:14
+Clock:410.7094-> Fire Mission! FU:3(8) Rounds:16
+Clock:411.4140-> EOM for FU:1(8)
+Clock:413.8460-> EOM for FU:5(2)
+Clock:414.7094-> EOM for FU:3(8) PDetect high -> FURQO
+Clock:414.7094-> FU:3(8) Orders> No free SUs! Resch FURQO at 418.4156
+Clock:418.4156-> SU:2(1) waiting for FU:2(16)
+Clock:418.4156-> FU:3(8) Orders> No free SUs! Resch FURQO at 420.8460
+Clock:420.8460-> Fire Mission! FU:5(2) Rounds:15
+Clock:420.8460-> FU:3(8) Orders> No free SUs! Resch FURQO at 421.4140
+Clock:421.4140-> Fire Mission! FU:1(8) Rounds:7
+Clock:421.4140-> FU:3(8) Orders> No free SUs! Resch FURQO at 423.1640
+Clock:423.1640-> EOM for FU:1(8) PDetect high -> FURQO
+Clock:423.1640-> FU:1(8) Orders> No free SUs! Resch FURQO at 424.5960
+Clock:423.1640-> FU:3(8) Orders> No free SUs! Resch FURQO at 424.5960
+Clock:424.5960-> EOM for FU:5(2)
+Clock:424.5960-> FU:1(8) Orders> No free SUs! Resch FURQO at 432.3595
+Clock:424.5960-> FU:3(8) Orders> No free SUs! Resch FURQO at 432.3595
+Clock:432.3595-> FU:6(18) and SU:1(18) -> END Resupply
+Clock:432.3595-> SU:1(18) sply low.  Going to ATP! Arrive:478.3884
+Clock:432.3595-> Fire Mission! FU:6(18) Rounds:14
+Clock:432.3595-> FU:1(8) Orders> No free SUs! Resch FURQO at 434.4416
+Clock:432.3595-> FU:3(8) Orders> No free SUs! Resch FURQO at 434.4416
+Clock:434.4416-> Fire Mission! FU:4(12) Rounds:11
+Clock:434.4416-> FU:1(8) Orders> No free SUs! Resch FURQO at 435.7805
+Clock:434.4416-> FU:3(8) Orders> No free SUs! Resch FURQO at 435.7805
+Clock:435.7805-> FU:2(5) depart for Node:8 Arrive:455.6241
+Clock:435.7805-> FU:1(8) Orders> No free SUs! Resch FURQO at 435.8595
+Clock:435.7805-> FU:3(8) Orders> No free SUs! Resch FURQO at 435.8595
+Clock:435.8595-> EOM for FU:6(18)
+Clock:435.8595-> Fire Mission! FU:6(18) Rounds:23
+Clock:435.8595-> FU:1(8) Orders> No free SUs! Resch FURQO at 437.1916
+Clock:435.8595-> FU:3(8) Orders> No free SUs! Resch FURQO at 437.1916
+Clock:437.1916-> EOM for FU:4(12)
+Clock:437.1916-> FU:1(8) Orders> No free SUs! Resch FURQO at 441.6095
+Clock:437.1916-> FU:3(8) Orders> No free SUs! Resch FURQO at 441.6095
+Clock:441.6095-> EOM for FU:6(18)
+Clock:441.6095-> FU:1(8) Orders> No free SUs! Resch FURQO at 443.6095
+Clock:441.6095-> FU:3(8) Orders> No free SUs! Resch FURQO at 443.6095
+Clock:443.6095-> Fire Mission! FU:6(18) Rounds:14
+Clock:443.6095-> FU:1(8) Orders> No free SUs! Resch FURQO at 447.1095
+Clock:443.6095-> FU:3(8) Orders> No free SUs! Resch FURQO at 447.1095
+Clock:447.1095-> EOM for FU:6(18)
+Clock:447.1095-> FU:1(8) Orders> No free SUs! Resch FURQO at 451.6334
+Clock:447.1095-> FU:3(8) Orders> No free SUs! Resch FURQO at 451.6334
+Clock:451.6334-> SU:3(1) resupplied at ATP SU now available
+Clock:451.6334-> FU:1(8) Orders> ReSply Typ:F Node:20 Dstn:20 SU:3(1)
+Clock:451.6334-> FU:3(8) Orders> No free SUs! Resch FURQO at 451.6334
+Clock:451.6334-> FU:1(8) depart for Node:5 Arrive:471.4770
+Clock:451.6334-> SU:3(1) depart for Node:19 Arrive:462.3336
+Clock:451.6334-> FU:3(8) Orders> No free SUs! Resch FURQO at 452.5960
+Clock:452.5960-> Fire Mission! FU:5(2) Rounds:17
+Clock:452.5960-> FU:3(8) Orders> No free SUs! Resch FURQO at 455.6241
+Clock:455.6241-> FU:2(8) depart for Node:19 Arrive:474.4053
+Clock:455.6241-> FU:3(8) Orders> No free SUs! Resch FURQO at 456.1916
+Clock:456.1916-> Fire Mission! FU:4(12) Rounds:7
+Clock:456.1916-> FU:3(8) Orders> No free SUs! Resch FURQO at 456.8460
+Clock:456.8460-> EOM for FU:5(2)
+Clock:456.8460-> Fire Mission! FU:5(2) Rounds:14
+Clock:456.8460-> FU:3(8) Orders> No free SUs! Resch FURQO at 457.9416
+Clock:457.9416-> EOM for FU:4(12) PDetect high -> FURQO
+Clock:457.9416-> FU:4(12) Orders> No free SUs! Resch FURQO at 460.3460
+Clock:457.9416-> FU:3(8) Orders> No free SUs! Resch FURQO at 460.3460
+Clock:460.3460-> EOM for FU:5(2)
+Clock:460.3460-> FU:4(12) Orders> No free SUs! Resch FURQO at 462.3336
+Clock:460.3460-> FU:3(8) Orders> No free SUs! Resch FURQO at 462.3336
+Clock:462.3336-> SU:3(19) depart for Node:8 Arrive:469.8454
+Clock:462.3336-> FU:4(12) Orders> No free SUs! Resch FURQO at 464.1095
+Clock:462.3336-> FU:3(8) Orders> No free SUs! Resch FURQO at 464.1095
+Clock:464.1095-> Fire Mission! FU:6(18) Rounds:20
+Clock:464.1095-> FU:4(12) Orders> No free SUs! Resch FURQO at 469.1095
+Clock:464.1095-> FU:3(8) Orders> No free SUs! Resch FURQO at 469.1095
+Clock:469.1095-> EOM for FU:6(18) PDetect high -> FURQO
+Clock:469.1095-> FU:6(18) Orders> No free SUs! Resch FURQO at 469.8454
+Clock:469.1095-> FU:4(12) Orders> No free SUs! Resch FURQO at 469.8454
+Clock:469.1095-> FU:3(8) Orders> No free SUs! Resch FURQO at 469.8454
+Clock:469.8454-> SU:3(8) depart for Node:5 Arrive:477.7821
+Clock:469.8454-> FU:6(18) Orders> No free SUs! Resch FURQO at 471.4770
+Clock:469.8454-> FU:4(12) Orders> No free SUs! Resch FURQO at 471.4770
+Clock:469.8454-> FU:3(8) Orders> No free SUs! Resch FURQO at 471.4770
+Clock:471.4770-> FU:1(5) depart for Node:16 Arrive:497.4695
+Clock:471.4770-> FU:6(18) Orders> No free SUs! Resch FURQO at 474.4053
+Clock:471.4770-> FU:4(12) Orders> No free SUs! Resch FURQO at 474.4053
+Clock:471.4770-> FU:3(8) Orders> No free SUs! Resch FURQO at 474.4053
+Clock:474.4053-> FU:2(19) depart for Node:1 Arrive:501.1584
+Clock:474.4053-> FU:6(18) Orders> No free SUs! Resch FURQO at 477.3460
+Clock:474.4053-> FU:4(12) Orders> No free SUs! Resch FURQO at 477.3460
+Clock:474.4053-> FU:3(8) Orders> No free SUs! Resch FURQO at 477.3460
+Clock:477.3460-> Fire Mission! FU:5(2) Rounds:10
+Clock:477.3460-> FU:6(18) Orders> No free SUs! Resch FURQO at 477.7821
+Clock:477.3460-> FU:4(12) Orders> No free SUs! Resch FURQO at 477.7821
+Clock:477.3460-> FU:3(8) Orders> No free SUs! Resch FURQO at 477.7821
+Clock:477.7821-> SU:3(5) depart for Node:16 Arrive:488.1781
+Clock:477.7821-> FU:6(18) Orders> No free SUs! Resch FURQO at 478.3884
+Clock:477.7821-> FU:4(12) Orders> No free SUs! Resch FURQO at 478.3884
+Clock:477.7821-> FU:3(8) Orders> No free SUs! Resch FURQO at 478.3884
+Clock:478.3884-> SU:1(1) resupplied at ATP SU now available
+Clock:478.3884-> FU:6(18) Orders> ReSply Typ:F Node:3 Dstn:3 SU:1(1)
+Clock:478.3884-> FU:4(12) Orders> No free SUs! Resch FURQO at 478.3884
+Clock:478.3884-> FU:3(8) Orders> No free SUs! Resch FURQO at 478.3884
+Clock:478.3884-> FU:6(18) depart for Node:3 Arrive:520.2214
+Clock:478.3884-> SU:1(1) depart for Node:11 Arrive:487.0478
+Clock:478.3884-> FU:4(12) Orders> No free SUs! Resch FURQO at 479.8460
+Clock:478.3884-> FU:3(8) Orders> No free SUs! Resch FURQO at 479.8460
+Clock:479.8460-> EOM for FU:5(2)
+Clock:479.8460-> FU:4(12) Orders> No free SUs! Resch FURQO at 484.8460
+Clock:479.8460-> FU:3(8) Orders> No free SUs! Resch FURQO at 484.8460
+Clock:484.8460-> Fire Mission! FU:5(2) Rounds:13
+Clock:484.8460-> FU:4(12) Orders> No free SUs! Resch FURQO at 487.0478
+Clock:484.8460-> FU:3(8) Orders> No free SUs! Resch FURQO at 487.0478
+Clock:487.0478-> SU:1(11) depart for Node:7 Arrive:496.0201
+Clock:487.0478-> FU:4(12) Orders> No free SUs! Resch FURQO at 488.0960
+Clock:487.0478-> FU:3(8) Orders> No free SUs! Resch FURQO at 488.0960
+Clock:488.0960-> EOM for FU:5(2)
+Clock:488.0960-> FU:4(12) Orders> No free SUs! Resch FURQO at 488.1781
+Clock:488.0960-> FU:3(8) Orders> No free SUs! Resch FURQO at 488.1781
+Clock:488.1781-> SU:3(16) depart for Node:18 Arrive:497.6622
+Clock:488.1781-> FU:4(12) Orders> No free SUs! Resch FURQO at 490.0960
+Clock:488.1781-> FU:3(8) Orders> No free SUs! Resch FURQO at 490.0960
+Clock:490.0960-> Fire Mission! FU:5(2) Rounds:14
+Clock:490.0960-> FU:4(12) Orders> No free SUs! Resch FURQO at 493.5960
+Clock:490.0960-> FU:3(8) Orders> No free SUs! Resch FURQO at 493.5960
+Clock:493.5960-> EOM for FU:5(2)
+Clock:493.5960-> FU:4(12) Orders> No free SUs! Resch FURQO at 496.0201
+Clock:493.5960-> FU:3(8) Orders> No free SUs! Resch FURQO at 496.0201
+Clock:496.0201-> SU:1(7) depart for Node:17 Arrive:505.9052
+Clock:496.0201-> FU:4(12) Orders> No free SUs! Resch FURQO at 497.4695
+Clock:496.0201-> FU:3(8) Orders> No free SUs! Resch FURQO at 497.4695
+Clock:497.4695-> FU:1(16) depart for Node:18 Arrive:521.1822
+Clock:497.4695-> FU:4(12) Orders> No free SUs! Resch FURQO at 497.6622
+Clock:497.4695-> FU:3(8) Orders> No free SUs! Resch FURQO at 497.6622
+Clock:497.6622-> SU:3(18) depart for Node:6 Arrive:512.2471
+Clock:497.6622-> FU:4(12) Orders> No free SUs! Resch FURQO at 499.5960
+Clock:497.6622-> FU:3(8) Orders> No free SUs! Resch FURQO at 499.5960
+Clock:499.5960-> Fire Mission! FU:5(2) Rounds:15
+Clock:499.5960-> FU:4(12) Orders> No free SUs! Resch FURQO at 501.1584
+Clock:499.5960-> FU:3(8) Orders> No free SUs! Resch FURQO at 501.1584
+Clock:501.1584-> FU:2(1) and SU:2(1) linked. -> Begin Resupply
+Clock:501.1584-> FU:4(12) Orders> No free SUs! Resch FURQO at 503.3460
+Clock:501.1584-> FU:3(8) Orders> No free SUs! Resch FURQO at 503.3460
+Clock:503.3460-> EOM for FU:5(2)
+Clock:503.3460-> FU:4(12) Orders> No free SUs! Resch FURQO at 505.9052
+Clock:503.3460-> FU:3(8) Orders> No free SUs! Resch FURQO at 505.9052
+Clock:505.9052-> SU:1(17) depart for Node:14 Arrive:515.0512
+Clock:505.9052-> FU:4(12) Orders> No free SUs! Resch FURQO at 511.3460
+Clock:505.9052-> FU:3(8) Orders> No free SUs! Resch FURQO at 511.3460
+Clock:511.3460-> Fire Mission! FU:5(2) Rounds:19
+Clock:511.3460-> FU:4(12) Orders> No free SUs! Resch FURQO at 512.2471
+Clock:511.3460-> FU:3(8) Orders> No free SUs! Resch FURQO at 512.2471
+Clock:512.2471-> SU:3(6) depart for Node:20 Arrive:519.6541
+Clock:512.2471-> FU:4(12) Orders> No free SUs! Resch FURQO at 515.0512
+Clock:512.2471-> FU:3(8) Orders> No free SUs! Resch FURQO at 515.0512
+Clock:515.0512-> SU:1(14) depart for Node:3 Arrive:528.5992
+Clock:515.0512-> FU:4(12) Orders> No free SUs! Resch FURQO at 516.0960
+Clock:515.0512-> FU:3(8) Orders> No free SUs! Resch FURQO at 516.0960
+Clock:516.0960-> EOM for FU:5(2) PDetect high -> FURQO
+Clock:516.0960-> FU:5(2) Orders> No free SUs! Resch FURQO at 519.6541
+Clock:516.0960-> FU:4(12) Orders> No free SUs! Resch FURQO at 519.6541
+Clock:516.0960-> FU:3(8) Orders> No free SUs! Resch FURQO at 519.6541
+Clock:519.6541-> SU:3(20) waiting for FU:1(16)
+Clock:519.6541-> FU:5(2) Orders> No free SUs! Resch FURQO at 520.2214
+Clock:519.6541-> FU:4(12) Orders> No free SUs! Resch FURQO at 520.2214
+Clock:519.6541-> FU:3(8) Orders> No free SUs! Resch FURQO at 520.2214
+Clock:520.2214-> FU:6(3) waiting for SU:1(14)
+Clock:520.2214-> FU:5(2) Orders> No free SUs! Resch FURQO at 521.1822
+Clock:520.2214-> FU:4(12) Orders> No free SUs! Resch FURQO at 521.1822
+Clock:520.2214-> FU:3(8) Orders> No free SUs! Resch FURQO at 521.1822
+Clock:521.1822-> FU:1(18) depart for Node:6 Arrive:557.6477
+Clock:521.1822-> FU:5(2) Orders> No free SUs! Resch FURQO at 524.8251
+Clock:521.1822-> FU:4(12) Orders> No free SUs! Resch FURQO at 524.8251
+Clock:521.1822-> FU:3(8) Orders> No free SUs! Resch FURQO at 524.8251
+Clock:524.8251-> FU:2(1) and SU:2(1) -> END Resupply
+Clock:524.8251-> SU:2(1) sply low.  Going to ATP! Arrive:524.8251
+Clock:524.8251-> SU:2(1) resupplied at ATP SU now available
+Clock:524.8251-> FU:5(2) Orders> ReSply Typ:F Node:16 Dstn:16 SU:2(1)
+Clock:524.8251-> FU:4(12) Orders> No free SUs! Resch FURQO at 524.8251
+Clock:524.8251-> FU:3(8) Orders> No free SUs! Resch FURQO at 524.8251
+Clock:524.8251-> FU:5(2) depart for Node:18 Arrive:555.4745
+Clock:524.8251-> SU:2(1) depart for Node:19 Arrive:535.5253
+Clock:524.8251-> FU:4(12) Orders> No free SUs! Resch FURQO at 527.8251
+Clock:524.8251-> FU:3(8) Orders> No free SUs! Resch FURQO at 527.8251
+Clock:527.8251-> Fire Mission! FU:2(1) Rounds:13
+Clock:527.8251-> FU:4(12) Orders> No free SUs! Resch FURQO at 528.5993
+Clock:527.8251-> FU:3(8) Orders> No free SUs! Resch FURQO at 528.5993
+Clock:528.5992-> FU:6(3) and SU:1(3) linked. -> Begin Resupply
+Clock:528.5993-> FU:4(12) Orders> No free SUs! Resch FURQO at 531.0751
+Clock:528.5993-> FU:3(8) Orders> No free SUs! Resch FURQO at 531.0751
+Clock:531.0751-> EOM for FU:2(1)
+Clock:531.0751-> FU:4(12) Orders> No free SUs! Resch FURQO at 535.0751
+Clock:531.0751-> FU:3(8) Orders> No free SUs! Resch FURQO at 535.0751
+Clock:535.0751-> Fire Mission! FU:2(1) Rounds:18
+Clock:535.0751-> FU:4(12) Orders> No free SUs! Resch FURQO at 535.5253
+Clock:535.0751-> FU:3(8) Orders> No free SUs! Resch FURQO at 535.5253
+Clock:535.5253-> SU:2(19) depart for Node:8 Arrive:543.0371
+Clock:535.5253-> FU:4(12) Orders> No free SUs! Resch FURQO at 539.5751
+Clock:535.5253-> FU:3(8) Orders> No free SUs! Resch FURQO at 539.5751
+Clock:539.5751-> EOM for FU:2(1)
+Clock:539.5751-> FU:4(12) Orders> No free SUs! Resch FURQO at 543.0371
+Clock:539.5751-> FU:3(8) Orders> No free SUs! Resch FURQO at 543.0371
+Clock:543.0371-> SU:2(8) depart for Node:5 Arrive:550.9737
+Clock:543.0371-> FU:4(12) Orders> No free SUs! Resch FURQO at 544.5751
+Clock:543.0371-> FU:3(8) Orders> No free SUs! Resch FURQO at 544.5751
+Clock:544.5751-> Fire Mission! FU:2(1) Rounds:12
+Clock:544.5751-> FU:4(12) Orders> No free SUs! Resch FURQO at 547.5751
+Clock:544.5751-> FU:3(8) Orders> No free SUs! Resch FURQO at 547.5751
+Clock:547.5751-> EOM for FU:2(1)
+Clock:547.5751-> FU:4(12) Orders> No free SUs! Resch FURQO at 548.5751
+Clock:547.5751-> FU:3(8) Orders> No free SUs! Resch FURQO at 548.5751
+Clock:548.5751-> Fire Mission! FU:2(1) Rounds:14
+Clock:548.5751-> FU:4(12) Orders> No free SUs! Resch FURQO at 550.9737
+Clock:548.5751-> FU:3(8) Orders> No free SUs! Resch FURQO at 550.9737
+Clock:550.9737-> SU:2(5) depart for Node:16 Arrive:561.3698
+Clock:550.9737-> FU:4(12) Orders> No free SUs! Resch FURQO at 552.0751
+Clock:550.9737-> FU:3(8) Orders> No free SUs! Resch FURQO at 552.0751
+Clock:552.0751-> EOM for FU:2(1)
+Clock:552.0751-> FU:4(12) Orders> No free SUs! Resch FURQO at 552.2659
+Clock:552.0751-> FU:3(8) Orders> No free SUs! Resch FURQO at 552.2659
+Clock:552.2659-> FU:6(3) and SU:1(3) -> END Resupply
+Clock:552.2659-> Fire Mission! FU:6(3) Rounds:10
+Clock:552.2659-> FU:4(12) Orders> ReSply Typ:F Node:7 Dstn:7 SU:1(3)
+Clock:552.2659-> FU:3(8) Orders> No free SUs! Resch FURQO at 552.2659
+Clock:552.2659-> FU:4(12) depart for Node:10 Arrive:577.0869
+Clock:552.2659-> SU:1(3) depart for Node:14 Arrive:565.8140
+Clock:552.2659-> FU:3(8) Orders> No free SUs! Resch FURQO at 554.7659
+Clock:554.7659-> EOM for FU:6(3)
+Clock:554.7659-> FU:3(8) Orders> No free SUs! Resch FURQO at 555.4745
+Clock:555.4745-> FU:5(18) depart for Node:16 Arrive:579.1871
+Clock:555.4745-> FU:3(8) Orders> No free SUs! Resch FURQO at 555.7659
+Clock:555.7659-> Fire Mission! FU:6(3) Rounds:10
+Clock:555.7659-> FU:3(8) Orders> No free SUs! Resch FURQO at 557.6477
+Clock:557.6477-> FU:1(6) depart for Node:20 Arrive:576.1670
+Clock:557.6477-> FU:3(8) Orders> No free SUs! Resch FURQO at 558.2659
+Clock:558.2659-> EOM for FU:6(3)
+Clock:558.2659-> FU:3(8) Orders> No free SUs! Resch FURQO at 561.0751
+Clock:561.0751-> Fire Mission! FU:2(1) Rounds:12
+Clock:561.0751-> FU:3(8) Orders> No free SUs! Resch FURQO at 561.3698
+Clock:561.3698-> SU:2(16) waiting for FU:5(18)
+Clock:561.3698-> FU:3(8) Orders> No free SUs! Resch FURQO at 564.0751
+Clock:564.0751-> EOM for FU:2(1)
+Clock:564.0751-> FU:3(8) Orders> No free SUs! Resch FURQO at 565.8140
+Clock:565.8140-> SU:1(14) depart for Node:17 Arrive:574.9600
+Clock:565.8140-> FU:3(8) Orders> No free SUs! Resch FURQO at 567.2659
+Clock:567.2659-> Fire Mission! FU:6(3) Rounds:13
+Clock:567.2659-> FU:3(8) Orders> No free SUs! Resch FURQO at 569.0751
+Clock:569.0751-> Fire Mission! FU:2(1) Rounds:12
+Clock:569.0751-> FU:3(8) Orders> No free SUs! Resch FURQO at 570.5159
+Clock:570.5159-> EOM for FU:6(3)
+Clock:570.5159-> FU:3(8) Orders> No free SUs! Resch FURQO at 572.0751
+Clock:572.0751-> EOM for FU:2(1)
+Clock:572.0751-> FU:3(8) Orders> No free SUs! Resch FURQO at 574.9600
+Clock:574.9600-> SU:1(17) depart for Node:7 Arrive:584.8450
+Clock:574.9600-> FU:3(8) Orders> No free SUs! Resch FURQO at 576.1670
+Clock:576.1670-> FU:1(20) and SU:3(20) linked. -> Begin Resupply
+Clock:576.1670-> FU:3(8) Orders> No free SUs! Resch FURQO at 577.0751
+Clock:577.0751-> Fire Mission! FU:2(1) Rounds:20
+Clock:577.0751-> FU:3(8) Orders> No free SUs! Resch FURQO at 577.0869
+Clock:577.0869-> FU:4(10) depart for Node:2 Arrive:598.5789
+Clock:577.0869-> FU:3(8) Orders> No free SUs! Resch FURQO at 579.1871
+Clock:579.1871-> FU:5(16) and SU:2(16) linked. -> Begin Resupply
+Clock:579.1871-> FU:3(8) Orders> No free SUs! Resch FURQO at 581.5159
+Clock:581.5159-> Fire Mission! FU:6(3) Rounds:23
+Clock:581.5159-> FU:3(8) Orders> No free SUs! Resch FURQO at 582.0751
+Clock:582.0751-> EOM for FU:2(1) PDetect high -> FURQO
+Clock:582.0751-> FU:2(1) Orders> No free SUs! Resch FURQO at 584.8450
+Clock:582.0751-> FU:3(8) Orders> No free SUs! Resch FURQO at 584.8450
+Clock:584.8450-> SU:1(7) waiting for FU:4(10)
+Clock:584.8450-> FU:2(1) Orders> No free SUs! Resch FURQO at 587.2659
+Clock:584.8450-> FU:3(8) Orders> No free SUs! Resch FURQO at 587.2659
+Clock:587.2659-> EOM for FU:6(3) PDetect high -> FURQO
+Clock:587.2659-> FU:6(3) Orders> No free SUs! Resch FURQO at 590.8337
+Clock:587.2659-> FU:2(1) Orders> No free SUs! Resch FURQO at 590.8337
+Clock:587.2659-> FU:3(8) Orders> No free SUs! Resch FURQO at 590.8337
+Clock:590.8337-> FU:1(20) and SU:3(20) -> END Resupply
+Clock:590.8337-> FU:6(3) Orders> ReSply Typ:F Node:8 Dstn:8 SU:3(20)
+Clock:590.8337-> FU:2(1) Orders> No free SUs! Resch FURQO at 590.8337
+Clock:590.8337-> FU:3(8) Orders> No free SUs! Resch FURQO at 590.8337
+Clock:590.8337-> FU:6(3) depart for Node:14 Arrive:624.7072
+Clock:590.8337-> SU:3(20) depart for Node:6 Arrive:598.2407
+Clock:590.8337-> FU:2(1) Orders> No free SUs! Resch FURQO at 593.8337
+Clock:590.8337-> FU:3(8) Orders> No free SUs! Resch FURQO at 593.8337
+Clock:593.8337-> Fire Mission! FU:1(20) Rounds:12
+Clock:593.8337-> FU:2(1) Orders> No free SUs! Resch FURQO at 596.8337
+Clock:593.8337-> FU:3(8) Orders> No free SUs! Resch FURQO at 596.8337
+Clock:596.8337-> EOM for FU:1(20)
+Clock:596.8337-> FU:2(1) Orders> No free SUs! Resch FURQO at 598.2407
+Clock:596.8337-> FU:3(8) Orders> No free SUs! Resch FURQO at 598.2407
+Clock:598.2407-> SU:3(6) depart for Node:18 Arrive:612.8255
+Clock:598.2407-> FU:2(1) Orders> No free SUs! Resch FURQO at 598.5789
+Clock:598.2407-> FU:3(8) Orders> No free SUs! Resch FURQO at 598.5789
+Clock:598.5789-> FU:4(2) depart for Node:3 Arrive:621.7089
+Clock:598.5789-> FU:2(1) Orders> No free SUs! Resch FURQO at 612.8255
+Clock:598.5789-> FU:3(8) Orders> No free SUs! Resch FURQO at 612.8255
+Clock:612.8255-> SU:3(18) depart for Node:16 Arrive:622.3097
+Clock:612.8255-> FU:2(1) Orders> No free SUs! Resch FURQO at 615.8337
+Clock:612.8255-> FU:3(8) Orders> No free SUs! Resch FURQO at 615.8337
+Clock:615.8337-> Fire Mission! FU:1(20) Rounds:8
+Clock:615.8337-> FU:2(1) Orders> No free SUs! Resch FURQO at 617.8337
+Clock:615.8337-> FU:3(8) Orders> No free SUs! Resch FURQO at 617.8337
+Clock:617.8337-> EOM for FU:1(20)
+Clock:617.8337-> FU:2(1) Orders> No free SUs! Resch FURQO at 621.7089
+Clock:617.8337-> FU:3(8) Orders> No free SUs! Resch FURQO at 621.7089
+Clock:621.7089-> FU:4(3) depart for Node:14 Arrive:655.5824
+Clock:621.7089-> FU:2(1) Orders> No free SUs! Resch FURQO at 622.3097
+Clock:621.7089-> FU:3(8) Orders> No free SUs! Resch FURQO at 622.3097
+Clock:622.3097-> SU:3(16) depart for Node:5 Arrive:632.7057
+Clock:622.3097-> FU:2(1) Orders> No free SUs! Resch FURQO at 622.8538
+Clock:622.3097-> FU:3(8) Orders> No free SUs! Resch FURQO at 622.8538
+Clock:622.8538-> FU:5(16) and SU:2(16) -> END Resupply
+Clock:622.8538-> FU:2(1) Orders> ReSply Typ:F Node:16 Dstn:16 SU:2(16)
+Clock:622.8538-> SU:2(16) waiting for FU:2(1)
+Clock:622.8538-> FU:3(8) Orders> No free SUs! Resch FURQO at 622.8538
+Clock:622.8538-> FU:2(1) depart for Node:19 Arrive:649.6069
+Clock:622.8538-> FU:3(8) Orders> No free SUs! Resch FURQO at 624.7072
+Clock:624.7072-> FU:6(14) depart for Node:5 Arrive:657.1376
+Clock:624.7072-> FU:3(8) Orders> No free SUs! Resch FURQO at 625.8538
+Clock:625.8538-> Fire Mission! FU:5(16) Rounds:12
+Clock:625.8538-> FU:3(8) Orders> No free SUs! Resch FURQO at 628.8538
+Clock:628.8538-> EOM for FU:5(16)
+Clock:628.8538-> FU:3(8) Orders> No free SUs! Resch FURQO at 629.8538
+Clock:629.8538-> Fire Mission! FU:5(16) Rounds:15
+Clock:629.8538-> FU:3(8) Orders> No free SUs! Resch FURQO at 632.7057
+Clock:632.7057-> SU:3(5) depart for Node:8 Arrive:640.6423
+Clock:632.7057-> FU:3(8) Orders> No free SUs! Resch FURQO at 632.8337
+Clock:632.8337-> Fire Mission! FU:1(20) Rounds:14
+Clock:632.8337-> FU:3(8) Orders> No free SUs! Resch FURQO at 633.6038
+Clock:633.6038-> EOM for FU:5(16)
+Clock:633.6038-> FU:3(8) Orders> No free SUs! Resch FURQO at 636.3337
+Clock:636.3337-> EOM for FU:1(20)
+Clock:636.3337-> FU:3(8) Orders> No free SUs! Resch FURQO at 640.6423
+Clock:640.6423-> SU:3(8) waiting for FU:6(14)
+Clock:640.6423-> FU:3(8) Orders> No free SUs! Resch FURQO at 649.6069
+Clock:649.6069-> FU:2(19) depart for Node:8 Arrive:668.3881
+Clock:649.6069-> FU:3(8) Orders> No free SUs! Resch FURQO at 655.5824
+Clock:655.5824-> FU:4(14) depart for Node:17 Arrive:678.4495
+Clock:655.5824-> FU:3(8) Orders> No free SUs! Resch FURQO at 657.1376
+Clock:657.1376-> FU:6(5) depart for Node:8 Arrive:676.9812
+Clock:657.1376-> FU:3(8) Orders> No free SUs! Resch FURQO at 657.6038
+Clock:657.6038-> Fire Mission! FU:5(16) Rounds:12
+Clock:657.6038-> FU:3(8) Orders> No free SUs! Resch FURQO at 658.3337
+Clock:658.3337-> Fire Mission! FU:1(20) Rounds:15
+Clock:658.3337-> FU:3(8) Orders> No free SUs! Resch FURQO at 660.6038
+Clock:660.6038-> EOM for FU:5(16)
+Clock:660.6038-> Fire Mission! FU:5(16) Rounds:16
+Clock:660.6038-> FU:3(8) Orders> No free SUs! Resch FURQO at 662.0837
+Clock:662.0837-> EOM for FU:1(20)
+Clock:662.0837-> FU:3(8) Orders> No free SUs! Resch FURQO at 664.6038
+Clock:664.6038-> EOM for FU:5(16)
+Clock:664.6038-> FU:3(8) Orders> No free SUs! Resch FURQO at 668.3881
+Clock:668.3881-> FU:2(8) depart for Node:5 Arrive:688.2317
+Clock:668.3881-> FU:3(8) Orders> No free SUs! Resch FURQO at 669.0837
+Clock:669.0837-> Fire Mission! FU:1(20) Rounds:15
+Clock:669.0837-> FU:3(8) Orders> No free SUs! Resch FURQO at 672.8337
+Clock:672.8337-> EOM for FU:1(20)
+Clock:672.8337-> FU:3(8) Orders> No free SUs! Resch FURQO at 673.6038
+Clock:673.6038-> Fire Mission! FU:5(16) Rounds:11
+Clock:673.6038-> FU:3(8) Orders> No free SUs! Resch FURQO at 676.3538
+Clock:676.3538-> EOM for FU:5(16)
+Clock:676.3538-> FU:3(8) Orders> No free SUs! Resch FURQO at 676.9812
+Clock:676.9812-> FU:6(8) and SU:3(8) linked. -> Begin Resupply
+Clock:676.9812-> FU:3(8) Orders> No free SUs! Resch FURQO at 678.3538
+Clock:678.3538-> Fire Mission! FU:5(16) Rounds:17
+Clock:678.3538-> FU:3(8) Orders> No free SUs! Resch FURQO at 678.4495
+Clock:678.4495-> FU:4(17) depart for Node:7 Arrive:703.1645
+Clock:678.4495-> FU:3(8) Orders> No free SUs! Resch FURQO at 682.6038
+Clock:682.6038-> EOM for FU:5(16) PDetect high -> FURQO
+Clock:682.6038-> FU:5(16) Orders> No free SUs! Resch FURQO at 688.2317
+Clock:682.6038-> FU:3(8) Orders> No free SUs! Resch FURQO at 688.2317
+Clock:688.2317-> FU:2(5) depart for Node:16 Arrive:714.2242
+Clock:688.2317-> FU:5(16) Orders> No free SUs! Resch FURQO at 695.6478
+Clock:688.2317-> FU:3(8) Orders> No free SUs! Resch FURQO at 695.6478
+Clock:695.6478-> FU:6(8) and SU:3(8) -> END Resupply
+Clock:695.6478-> FU:5(16) Orders> ReSply Typ:F Node:15 Dstn:15 SU:3(8)
+Clock:695.6478-> FU:3(8) Orders> No free SUs! Resch FURQO at 695.6478
+Clock:695.6478-> FU:5(16) depart for Node:5 Arrive:721.6404
+Clock:695.6478-> SU:3(8) depart for Node:19 Arrive:703.1596
+Clock:695.6478-> FU:3(8) Orders> No free SUs! Resch FURQO at 703.1596
+Clock:703.1596-> SU:3(19) depart for Node:15 Arrive:713.0920
+Clock:703.1596-> FU:3(8) Orders> No free SUs! Resch FURQO at 703.1645
+Clock:703.1645-> FU:4(7) and SU:1(7) linked. -> Begin Resupply
+Clock:703.1645-> FU:3(8) Orders> No free SUs! Resch FURQO at 710.8337
+Clock:710.8337-> Fire Mission! FU:1(20) Rounds:23
+Clock:710.8337-> FU:3(8) Orders> No free SUs! Resch FURQO at 712.6478
+Clock:712.6478-> Fire Mission! FU:6(8) Rounds:12
+Clock:712.6478-> FU:3(8) Orders> No free SUs! Resch FURQO at 713.0920
+Clock:713.0920-> SU:3(15) waiting for FU:5(16)
+Clock:713.0920-> FU:3(8) Orders> No free SUs! Resch FURQO at 714.2243
+Clock:714.2242-> FU:2(16) and SU:2(16) linked. -> Begin Resupply
+Clock:714.2243-> FU:3(8) Orders> No free SUs! Resch FURQO at 715.6478
+Clock:715.6478-> EOM for FU:6(8)
+Clock:715.6478-> FU:3(8) Orders> No free SUs! Resch FURQO at 716.5837
+Clock:716.5837-> EOM for FU:1(20) PDetect high -> FURQO
+Clock:716.5837-> FU:1(20) Orders> No free SUs! Resch FURQO at 717.8312
+Clock:716.5837-> FU:3(8) Orders> No free SUs! Resch FURQO at 717.8312
+Clock:717.8312-> FU:4(7) and SU:1(7) -> END Resupply
+Clock:717.8312-> FU:1(20) Orders> ReSply Typ:F Node:19 Dstn:19 SU:1(7)
+Clock:717.8312-> FU:3(8) Orders> No free SUs! Resch FURQO at 717.8312
+Clock:717.8312-> FU:1(20) depart for Node:6 Arrive:736.3505
+Clock:717.8312-> SU:1(7) depart for Node:11 Arrive:726.8035
+Clock:717.8312-> FU:3(8) Orders> No free SUs! Resch FURQO at 718.6478
+Clock:718.6478-> Fire Mission! FU:6(8) Rounds:15
+Clock:718.6478-> FU:3(8) Orders> No free SUs! Resch FURQO at 721.6404
+Clock:721.6404-> FU:5(5) depart for Node:8 Arrive:741.4840
+Clock:721.6404-> FU:3(8) Orders> No free SUs! Resch FURQO at 722.3978
+Clock:722.3978-> EOM for FU:6(8)
+Clock:722.3978-> FU:3(8) Orders> No free SUs! Resch FURQO at 726.8036
+Clock:726.8035-> SU:1(11) depart for Node:15 Arrive:729.0333
+Clock:726.8036-> FU:3(8) Orders> No free SUs! Resch FURQO at 729.0333
+Clock:729.0333-> SU:1(15) depart for Node:19 Arrive:738.9656
+Clock:729.0333-> FU:3(8) Orders> No free SUs! Resch FURQO at 734.3978
+Clock:734.3978-> Fire Mission! FU:6(8) Rounds:13
+Clock:734.3978-> FU:3(8) Orders> No free SUs! Resch FURQO at 736.3505
+Clock:736.3505-> FU:1(6) depart for Node:18 Arrive:772.8160
+Clock:736.3505-> FU:3(8) Orders> No free SUs! Resch FURQO at 737.6478
+Clock:737.6478-> EOM for FU:6(8)
+Clock:737.6478-> FU:3(8) Orders> No free SUs! Resch FURQO at 738.9656
+Clock:738.9656-> SU:1(19) waiting for FU:1(6)
+Clock:738.9656-> FU:3(8) Orders> No free SUs! Resch FURQO at 741.4840
+Clock:741.4840-> FU:5(8) depart for Node:19 Arrive:760.2652
+Clock:741.4840-> FU:3(8) Orders> No free SUs! Resch FURQO at 742.8312
+Clock:742.8312-> Fire Mission! FU:4(7) Rounds:19
+Clock:742.8312-> FU:3(8) Orders> No free SUs! Resch FURQO at 746.6478
+Clock:746.6478-> Fire Mission! FU:6(8) Rounds:10
+Clock:746.6478-> FU:3(8) Orders> No free SUs! Resch FURQO at 747.5812
+Clock:747.5812-> EOM for FU:4(7)
+Clock:747.5812-> FU:3(8) Orders> No free SUs! Resch FURQO at 747.8909
+Clock:747.8909-> FU:2(16) and SU:2(16) -> END Resupply
+Clock:747.8909-> FU:3(8) Orders> ReSply Typ:F Node:9 Dstn:9 SU:2(16)
+Clock:747.8909-> FU:3(8) depart for Node:4 Arrive:768.0277
+Clock:747.8909-> SU:2(16) depart for Node:14 Arrive:765.3926
+Clock:749.1478-> EOM for FU:6(8)
+Clock:753.8909-> Fire Mission! FU:2(16) Rounds:15
+Clock:754.1478-> Fire Mission! FU:6(8) Rounds:11
+Clock:756.8978-> EOM for FU:6(8)
+Clock:757.6409-> EOM for FU:2(16)
+Clock:758.8978-> Fire Mission! FU:6(8) Rounds:14
+Clock:760.2652-> FU:5(19) depart for Node:15 Arrive:785.0985
+Clock:761.6409-> Fire Mission! FU:2(16) Rounds:13
+Clock:762.3978-> EOM for FU:6(8)
+Clock:764.8909-> EOM for FU:2(16)
+Clock:765.3926-> SU:2(14) depart for Node:9 Arrive:774.9792
+Clock:767.3978-> Fire Mission! FU:6(8) Rounds:12
+Clock:768.0277-> FU:3(4) depart for Node:17 Arrive:784.9771
+Clock:770.3978-> EOM for FU:6(8) PDetect high -> FURQO
+Clock:770.3978-> FU:6(8) Orders> No free SUs! Resch FURQO at 772.8160
+Clock:772.8160-> FU:1(18) depart for Node:16 Arrive:796.5286
+Clock:772.8160-> FU:6(8) Orders> No free SUs! Resch FURQO at 774.9792
+Clock:774.9792-> SU:2(9) waiting for FU:3(4)
+Clock:774.9792-> FU:6(8) Orders> No free SUs! Resch FURQO at 777.5812
+Clock:777.5812-> Fire Mission! FU:4(7) Rounds:17
+Clock:777.5812-> FU:6(8) Orders> No free SUs! Resch FURQO at 778.8909
+Clock:778.8909-> Fire Mission! FU:2(16) Rounds:12
+Clock:778.8909-> FU:6(8) Orders> No free SUs! Resch FURQO at 781.8312
+Clock:781.8312-> EOM for FU:4(7)
+Clock:781.8312-> FU:6(8) Orders> No free SUs! Resch FURQO at 781.8909
+Clock:781.8909-> EOM for FU:2(16)
+Clock:781.8909-> Fire Mission! FU:2(16) Rounds:17
+Clock:781.8909-> FU:6(8) Orders> No free SUs! Resch FURQO at 784.9771
+Clock:784.9771-> FU:3(17) depart for Node:9 Arrive:801.6870
+Clock:784.9771-> FU:6(8) Orders> No free SUs! Resch FURQO at 785.0985
+Clock:785.0985-> FU:5(15) and SU:3(15) linked. -> Begin Resupply
+Clock:785.0985-> FU:6(8) Orders> No free SUs! Resch FURQO at 786.1409
+Clock:786.1409-> EOM for FU:2(16)
+Clock:786.1409-> FU:6(8) Orders> No free SUs! Resch FURQO at 793.8312
+Clock:793.8312-> Fire Mission! FU:4(7) Rounds:19
+Clock:793.8312-> FU:6(8) Orders> No free SUs! Resch FURQO at 796.5286
+Clock:796.5286-> FU:1(16) depart for Node:5 Arrive:822.5212
+Clock:796.5286-> FU:6(8) Orders> No free SUs! Resch FURQO at 798.1409
+Clock:798.1409-> Fire Mission! FU:2(16) Rounds:17
+Clock:798.1409-> FU:6(8) Orders> No free SUs! Resch FURQO at 798.5812
+Clock:798.5812-> EOM for FU:4(7) PDetect high -> FURQO
+Clock:798.5812-> FU:4(7) Orders> No free SUs! Resch FURQO at 801.6870
+Clock:798.5812-> FU:6(8) Orders> No free SUs! Resch FURQO at 801.6870
+Clock:801.6870-> FU:3(9) and SU:2(9) linked. -> Begin Resupply
+Clock:801.6870-> FU:4(7) Orders> No free SUs! Resch FURQO at 802.3909
+Clock:801.6870-> FU:6(8) Orders> No free SUs! Resch FURQO at 802.3909
+Clock:802.3909-> EOM for FU:2(16)
+Clock:802.3909-> FU:4(7) Orders> No free SUs! Resch FURQO at 811.3909
+Clock:802.3909-> FU:6(8) Orders> No free SUs! Resch FURQO at 811.3909
+Clock:811.3909-> Fire Mission! FU:2(16) Rounds:15
+Clock:811.3909-> FU:4(7) Orders> No free SUs! Resch FURQO at 812.7652
+Clock:811.3909-> FU:6(8) Orders> No free SUs! Resch FURQO at 812.7652
+Clock:812.7652-> FU:5(15) and SU:3(15) -> END Resupply
+Clock:812.7652-> FU:4(7) Orders> ReSply Typ:F Node:14 Dstn:14 SU:3(15)
+Clock:812.7652-> FU:6(8) Orders> No free SUs! Resch FURQO at 812.7652
+Clock:812.7652-> FU:4(7) depart for Node:17 Arrive:837.4801
+Clock:812.7652-> SU:3(15) depart for Node:11 Arrive:814.9949
+Clock:812.7652-> FU:6(8) Orders> No free SUs! Resch FURQO at 814.9949
+Clock:814.9949-> SU:3(11) depart for Node:7 Arrive:823.9673
+Clock:814.9949-> FU:6(8) Orders> No free SUs! Resch FURQO at 815.1409
+Clock:815.1409-> EOM for FU:2(16)
+Clock:815.1409-> FU:6(8) Orders> No free SUs! Resch FURQO at 815.6870
+Clock:815.6870-> FU:3(9) and SU:2(9) -> END Resupply
+Clock:815.6870-> SU:2(9) sply low.  Going to ATP! Arrive:846.3513
+Clock:815.6870-> Fire Mission! FU:3(9) Rounds:16
+Clock:815.6870-> FU:6(8) Orders> No free SUs! Resch FURQO at 816.1409
+Clock:816.1409-> Fire Mission! FU:2(16) Rounds:7
+Clock:816.1409-> FU:6(8) Orders> No free SUs! Resch FURQO at 816.7652
+Clock:816.7652-> Fire Mission! FU:5(15) Rounds:14
+Clock:816.7652-> FU:6(8) Orders> No free SUs! Resch FURQO at 817.8909
+Clock:817.8909-> EOM for FU:2(16) PDetect high -> FURQO
+Clock:817.8909-> FU:2(16) Orders> No free SUs! Resch FURQO at 819.6870
+Clock:817.8909-> FU:6(8) Orders> No free SUs! Resch FURQO at 819.6870
+Clock:819.6870-> EOM for FU:3(9)
+Clock:819.6870-> FU:2(16) Orders> No free SUs! Resch FURQO at 820.2652
+Clock:819.6870-> FU:6(8) Orders> No free SUs! Resch FURQO at 820.2652
+Clock:820.2652-> EOM for FU:5(15)
+Clock:820.2652-> FU:2(16) Orders> No free SUs! Resch FURQO at 820.6870
+Clock:820.2652-> FU:6(8) Orders> No free SUs! Resch FURQO at 820.6870
+Clock:820.6870-> Fire Mission! FU:3(9) Rounds:18
+Clock:820.6870-> FU:2(16) Orders> No free SUs! Resch FURQO at 822.5212
+Clock:820.6870-> FU:6(8) Orders> No free SUs! Resch FURQO at 822.5212
+Clock:822.5212-> FU:1(5) depart for Node:8 Arrive:842.3648
+Clock:822.5212-> FU:2(16) Orders> No free SUs! Resch FURQO at 823.9673
+Clock:822.5212-> FU:6(8) Orders> No free SUs! Resch FURQO at 823.9673
+Clock:823.9673-> SU:3(7) depart for Node:17 Arrive:833.8523
+Clock:823.9673-> FU:2(16) Orders> No free SUs! Resch FURQO at 825.1870
+Clock:823.9673-> FU:6(8) Orders> No free SUs! Resch FURQO at 825.1870
+Clock:825.1870-> EOM for FU:3(9)
+Clock:825.1870-> FU:2(16) Orders> No free SUs! Resch FURQO at 832.2652
+Clock:825.1870-> FU:6(8) Orders> No free SUs! Resch FURQO at 832.2652
+Clock:832.2652-> Fire Mission! FU:5(15) Rounds:14
+Clock:832.2652-> FU:2(16) Orders> No free SUs! Resch FURQO at 833.8523
+Clock:832.2652-> FU:6(8) Orders> No free SUs! Resch FURQO at 833.8523
+Clock:833.8523-> SU:3(17) depart for Node:14 Arrive:842.9983
+Clock:833.8523-> FU:2(16) Orders> No free SUs! Resch FURQO at 835.7652
+Clock:833.8523-> FU:6(8) Orders> No free SUs! Resch FURQO at 835.7652
+Clock:835.7652-> EOM for FU:5(15)
+Clock:835.7652-> FU:2(16) Orders> No free SUs! Resch FURQO at 837.4801
+Clock:835.7652-> FU:6(8) Orders> No free SUs! Resch FURQO at 837.4801
+Clock:837.4801-> FU:4(17) depart for Node:14 Arrive:860.3473
+Clock:837.4801-> FU:2(16) Orders> No free SUs! Resch FURQO at 837.7652
+Clock:837.4801-> FU:6(8) Orders> No free SUs! Resch FURQO at 837.7652
+Clock:837.7652-> Fire Mission! FU:5(15) Rounds:14
+Clock:837.7652-> FU:2(16) Orders> No free SUs! Resch FURQO at 841.2652
+Clock:837.7652-> FU:6(8) Orders> No free SUs! Resch FURQO at 841.2652
+Clock:841.2652-> EOM for FU:5(15)
+Clock:841.2652-> FU:2(16) Orders> No free SUs! Resch FURQO at 842.3648
+Clock:841.2652-> FU:6(8) Orders> No free SUs! Resch FURQO at 842.3648
+Clock:842.3648-> FU:1(8) depart for Node:19 Arrive:861.1460
+Clock:842.3648-> FU:2(16) Orders> No free SUs! Resch FURQO at 842.9983
+Clock:842.3648-> FU:6(8) Orders> No free SUs! Resch FURQO at 842.9983
+Clock:842.9983-> SU:3(14) waiting for FU:4(17)
+Clock:842.9983-> FU:2(16) Orders> No free SUs! Resch FURQO at 846.3513
+Clock:842.9983-> FU:6(8) Orders> No free SUs! Resch FURQO at 846.3513
+Clock:846.3513-> SU:2(1) resupplied at ATP SU now available
+Clock:846.3513-> FU:2(16) Orders> ReSply Typ:F Node:4 Dstn:4 SU:2(1)
+Clock:846.3513-> FU:6(8) Orders> No free SUs! Resch FURQO at 846.3513
+Clock:846.3513-> FU:2(16) depart for Node:5 Arrive:872.3438
+Clock:846.3513-> SU:2(1) depart for Node:19 Arrive:857.0515
+Clock:846.3513-> FU:6(8) Orders> No free SUs! Resch FURQO at 852.1870
+Clock:852.1870-> Fire Mission! FU:3(9) Rounds:9
+Clock:852.1870-> FU:6(8) Orders> No free SUs! Resch FURQO at 852.2652
+Clock:852.2652-> Fire Mission! FU:5(15) Rounds:6
+Clock:852.2652-> FU:6(8) Orders> No free SUs! Resch FURQO at 853.7652
+Clock:853.7652-> EOM for FU:5(15)
+Clock:853.7652-> FU:6(8) Orders> No free SUs! Resch FURQO at 854.4370
+Clock:854.4370-> EOM for FU:3(9)
+Clock:854.4370-> FU:6(8) Orders> No free SUs! Resch FURQO at 856.7652
+Clock:856.7652-> Fire Mission! FU:5(15) Rounds:16
+Clock:856.7652-> FU:6(8) Orders> No free SUs! Resch FURQO at 857.0515
+Clock:857.0515-> SU:2(19) depart for Node:13 Arrive:863.2076
+Clock:857.0515-> FU:6(8) Orders> No free SUs! Resch FURQO at 860.3473
+Clock:860.3473-> FU:4(14) and SU:3(14) linked. -> Begin Resupply
+Clock:860.3473-> FU:6(8) Orders> No free SUs! Resch FURQO at 860.7652
+Clock:860.7652-> EOM for FU:5(15)
+Clock:860.7652-> FU:6(8) Orders> No free SUs! Resch FURQO at 861.1460
+Clock:861.1460-> FU:1(19) and SU:1(19) linked. -> Begin Resupply
+Clock:861.1460-> FU:6(8) Orders> No free SUs! Resch FURQO at 863.2076
+Clock:863.2076-> SU:2(13) depart for Node:4 Arrive:870.5238
+Clock:863.2076-> FU:6(8) Orders> No free SUs! Resch FURQO at 870.5238
+Clock:870.5238-> SU:2(4) waiting for FU:2(16)
+Clock:870.5238-> FU:6(8) Orders> No free SUs! Resch FURQO at 872.3438
+Clock:872.3438-> FU:2(5) depart for Node:8 Arrive:892.1874
+Clock:872.3438-> FU:6(8) Orders> No free SUs! Resch FURQO at 878.6806
+Clock:878.6806-> FU:4(14) and SU:3(14) -> END Resupply
+Clock:878.6806-> FU:6(8) Orders> ReSply Typ:F Node:4 Dstn:4 SU:3(14)
+Clock:878.6806-> FU:6(8) depart for Node:4 Arrive:898.8174
+Clock:878.6806-> SU:3(14) depart for Node:17 Arrive:887.8266
+Clock:878.7652-> Fire Mission! FU:5(15) Rounds:17
+Clock:883.0152-> EOM for FU:5(15) PDetect high -> FURQO
+Clock:883.0152-> FU:5(15) Orders> No free SUs! Resch FURQO at 886.6806
+Clock:886.6806-> Fire Mission! FU:4(14) Rounds:16
+Clock:886.6806-> FU:5(15) Orders> No free SUs! Resch FURQO at 887.8266
+Clock:887.8266-> SU:3(17) depart for Node:4 Arrive:894.6057
+Clock:887.8266-> FU:5(15) Orders> No free SUs! Resch FURQO at 888.4370
+Clock:888.4370-> Fire Mission! FU:3(9) Rounds:8
+Clock:888.4370-> FU:5(15) Orders> No free SUs! Resch FURQO at 890.1460
+Clock:890.1460-> FU:1(19) and SU:1(19) -> END Resupply
+Clock:890.1460-> FU:5(15) Orders> ReSply Typ:F Node:4 Dstn:4 SU:1(19)
+Clock:890.1460-> FU:5(15) depart for Node:11 Arrive:895.7208
+Clock:890.1460-> SU:1(19) depart for Node:13 Arrive:896.3021
+Clock:890.4370-> EOM for FU:3(9) PDetect high -> FURQO
+Clock:890.4370-> FU:3(9) Orders> No free SUs! Resch FURQO at 890.6806
+Clock:890.6806-> EOM for FU:4(14)
+Clock:890.6806-> FU:3(9) Orders> No free SUs! Resch FURQO at 892.1874
+Clock:892.1874-> FU:2(8) depart for Node:4 Arrive:912.3242
+Clock:892.1874-> FU:3(9) Orders> No free SUs! Resch FURQO at 894.6057
+Clock:894.6057-> SU:3(4) waiting for FU:6(8)
+Clock:894.6057-> FU:3(9) Orders> No free SUs! Resch FURQO at 894.6806
+Clock:894.6806-> Fire Mission! FU:4(14) Rounds:15
+Clock:894.6806-> FU:3(9) Orders> No free SUs! Resch FURQO at 895.7208
+Clock:895.7208-> FU:5(11) depart for Node:7 Arrive:918.1540
+Clock:895.7208-> FU:3(9) Orders> No free SUs! Resch FURQO at 896.3021
+Clock:896.3021-> SU:1(13) depart for Node:4 Arrive:903.6183
+Clock:896.3021-> FU:3(9) Orders> No free SUs! Resch FURQO at 897.1460
+Clock:897.1460-> Fire Mission! FU:1(19) Rounds:12
+Clock:897.1460-> FU:3(9) Orders> No free SUs! Resch FURQO at 898.4306
+Clock:898.4306-> EOM for FU:4(14)
+Clock:898.4306-> FU:3(9) Orders> No free SUs! Resch FURQO at 898.8174
+Clock:898.8174-> FU:6(4) and SU:3(4) linked. -> Begin Resupply
+Clock:898.8174-> FU:3(9) Orders> No free SUs! Resch FURQO at 900.1460
+Clock:900.1460-> EOM for FU:1(19)
+Clock:900.1460-> FU:3(9) Orders> No free SUs! Resch FURQO at 900.4306
+Clock:900.4306-> Fire Mission! FU:4(14) Rounds:15
+Clock:900.4306-> FU:3(9) Orders> No free SUs! Resch FURQO at 903.6183
+Clock:903.6183-> SU:1(4) waiting for FU:5(11)
+Clock:903.6183-> FU:3(9) Orders> No free SUs! Resch FURQO at 904.1806
+Clock:904.1806-> EOM for FU:4(14)
+Clock:904.1806-> FU:3(9) Orders> No free SUs! Resch FURQO at 910.1460
+Clock:910.1460-> Fire Mission! FU:1(19) Rounds:20
+Clock:910.1460-> FU:3(9) Orders> No free SUs! Resch FURQO at 912.3242
+Clock:912.3242-> FU:2(4) and SU:2(4) linked. -> Begin Resupply
+Clock:912.3242-> FU:3(9) Orders> No free SUs! Resch FURQO at 915.1460
+Clock:915.1460-> EOM for FU:1(19)
+Clock:915.1460-> FU:3(9) Orders> No free SUs! Resch FURQO at 917.1460
+Clock:917.1460-> Fire Mission! FU:1(19) Rounds:19
+Clock:917.1460-> FU:3(9) Orders> No free SUs! Resch FURQO at 918.1540
+Clock:918.1540-> FU:5(7) depart for Node:4 Arrive:939.2098
+Clock:918.1540-> FU:3(9) Orders> No free SUs! Resch FURQO at 921.1806
+Clock:921.1806-> Fire Mission! FU:4(14) Rounds:15
+Clock:921.1806-> FU:3(9) Orders> No free SUs! Resch FURQO at 921.8960
+Clock:921.8960-> EOM for FU:1(19) PDetect high -> FURQO
+Clock:921.8960-> FU:1(19) Orders> No free SUs! Resch FURQO at 924.9306
+Clock:921.8960-> FU:3(9) Orders> No free SUs! Resch FURQO at 924.9306
+Clock:924.9306-> EOM for FU:4(14)
+Clock:924.9306-> FU:1(19) Orders> No free SUs! Resch FURQO at 927.8174
+Clock:924.9306-> FU:3(9) Orders> No free SUs! Resch FURQO at 927.8174
+Clock:927.8174-> FU:6(4) and SU:3(4) -> END Resupply
+Clock:927.8174-> SU:3(4) sply low.  Going to ATP! Arrive:951.9899
+Clock:927.8174-> FU:1(19) Orders> No free SUs! Resch FURQO at 928.8174
+Clock:927.8174-> FU:3(9) Orders> No free SUs! Resch FURQO at 928.8174
+Clock:928.8174-> Fire Mission! FU:6(4) Rounds:14
+Clock:928.8174-> FU:1(19) Orders> No free SUs! Resch FURQO at 932.3174
+Clock:928.8174-> FU:3(9) Orders> No free SUs! Resch FURQO at 932.3174
+Clock:932.3174-> EOM for FU:6(4)
+Clock:932.3174-> FU:1(19) Orders> No free SUs! Resch FURQO at 937.9306
+Clock:932.3174-> FU:3(9) Orders> No free SUs! Resch FURQO at 937.9306
+Clock:937.9306-> Fire Mission! FU:4(14) Rounds:10
+Clock:937.9306-> FU:1(19) Orders> No free SUs! Resch FURQO at 939.2098
+Clock:937.9306-> FU:3(9) Orders> No free SUs! Resch FURQO at 939.2098
+Clock:939.2098-> FU:5(4) and SU:1(4) linked. -> Begin Resupply
+Clock:939.2098-> FU:1(19) Orders> No free SUs! Resch FURQO at 940.4306
+Clock:939.2098-> FU:3(9) Orders> No free SUs! Resch FURQO at 940.4306
+Clock:940.4306-> EOM for FU:4(14)
+Clock:940.4306-> FU:1(19) Orders> No free SUs! Resch FURQO at 942.4306
+Clock:940.4306-> FU:3(9) Orders> No free SUs! Resch FURQO at 942.4306
+Clock:942.4306-> Fire Mission! FU:4(14) Rounds:18
+Clock:942.4306-> FU:1(19) Orders> No free SUs! Resch FURQO at 944.3242
+Clock:942.4306-> FU:3(9) Orders> No free SUs! Resch FURQO at 944.3242
+Clock:944.3242-> FU:2(4) and SU:2(4) -> END Resupply
+Clock:944.3242-> FU:1(19) Orders> ReSply Typ:F Node:4 Dstn:4 SU:2(4)
+Clock:944.3242-> SU:2(4) waiting for FU:1(19)
+Clock:944.3242-> FU:3(9) Orders> No free SUs! Resch FURQO at 944.3242
+Clock:944.3242-> FU:1(19) depart for Node:13 Arrive:959.7160
+Clock:944.3242-> FU:3(9) Orders> No free SUs! Resch FURQO at 946.3174
+Clock:946.3174-> Fire Mission! FU:6(4) Rounds:22
+Clock:946.3174-> FU:3(9) Orders> No free SUs! Resch FURQO at 946.9306
+Clock:946.9306-> EOM for FU:4(14) PDetect high -> FURQO
+Clock:946.9306-> FU:4(14) Orders> No free SUs! Resch FURQO at 949.3242
+Clock:946.9306-> FU:3(9) Orders> No free SUs! Resch FURQO at 949.3242
+Clock:949.3242-> Fire Mission! FU:2(4) Rounds:14
+Clock:949.3242-> FU:4(14) Orders> No free SUs! Resch FURQO at 951.8174
+Clock:949.3242-> FU:3(9) Orders> No free SUs! Resch FURQO at 951.8174
+Clock:951.8174-> EOM for FU:6(4)
+Clock:951.8174-> FU:4(14) Orders> No free SUs! Resch FURQO at 951.9899
+Clock:951.8174-> FU:3(9) Orders> No free SUs! Resch FURQO at 951.9899
+Clock:951.9899-> SU:3(1) resupplied at ATP SU now available
+Clock:951.9899-> FU:4(14) Orders> ReSply Typ:F Node:13 Dstn:13 SU:3(1)
+Clock:951.9899-> FU:3(9) Orders> No free SUs! Resch FURQO at 951.9899
+Clock:951.9899-> FU:4(14) depart for Node:5 Arrive:984.4203
+Clock:951.9899-> SU:3(1) depart for Node:19 Arrive:962.6901
+Clock:951.9899-> FU:3(9) Orders> No free SUs! Resch FURQO at 952.8242
+Clock:952.8242-> EOM for FU:2(4)
+Clock:952.8242-> FU:3(9) Orders> No free SUs! Resch FURQO at 957.8242
+Clock:957.8242-> Fire Mission! FU:2(4) Rounds:13
+Clock:957.8242-> FU:3(9) Orders> No free SUs! Resch FURQO at 959.7160
+Clock:959.7160-> FU:1(13) depart for Node:4 Arrive:978.0081
+Clock:959.7160-> FU:3(9) Orders> No free SUs! Resch FURQO at 961.0742
+Clock:961.0742-> EOM for FU:2(4)
+Clock:961.0742-> FU:3(9) Orders> No free SUs! Resch FURQO at 962.6901
+Clock:962.6901-> SU:3(19) depart for Node:13 Arrive:968.8462
+Clock:962.6901-> FU:3(9) Orders> No free SUs! Resch FURQO at 966.2098
+Clock:966.2098-> FU:5(4) and SU:1(4) -> END Resupply
+Clock:966.2098-> SU:1(4) sply low.  Going to ATP! Arrive:990.3822
+Clock:966.2098-> FU:3(9) Orders> No free SUs! Resch FURQO at 966.8174
+Clock:966.8174-> Fire Mission! FU:6(4) Rounds:11
+Clock:966.8174-> FU:3(9) Orders> No free SUs! Resch FURQO at 967.2098
+Clock:967.2098-> Fire Mission! FU:5(4) Rounds:13
+Clock:967.2098-> FU:3(9) Orders> No free SUs! Resch FURQO at 968.8462
+Clock:968.8462-> SU:3(13) waiting for FU:4(14)
+Clock:968.8462-> FU:3(9) Orders> No free SUs! Resch FURQO at 969.5674
+Clock:969.5674-> EOM for FU:6(4)
+Clock:969.5674-> FU:3(9) Orders> No free SUs! Resch FURQO at 970.4598
+Clock:970.4598-> EOM for FU:5(4)
+Clock:970.4598-> FU:3(9) Orders> No free SUs! Resch FURQO at 971.4598
+Clock:971.4598-> Fire Mission! FU:5(4) Rounds:14
+Clock:971.4598-> FU:3(9) Orders> No free SUs! Resch FURQO at 974.9598
+Clock:974.9598-> EOM for FU:5(4)
+Clock:974.9598-> FU:3(9) Orders> No free SUs! Resch FURQO at 975.9598
+Clock:975.9598-> Fire Mission! FU:5(4) Rounds:11
+Clock:975.9598-> FU:3(9) Orders> No free SUs! Resch FURQO at 976.0742
+Clock:976.0742-> Fire Mission! FU:2(4) Rounds:12
+Clock:976.0742-> FU:3(9) Orders> No free SUs! Resch FURQO at 978.0081
+Clock:978.0081-> FU:1(4) and SU:2(4) linked. -> Begin Resupply
+Clock:978.0081-> FU:3(9) Orders> No free SUs! Resch FURQO at 978.7098
+Clock:978.7098-> EOM for FU:5(4)
+Clock:978.7098-> FU:3(9) Orders> No free SUs! Resch FURQO at 979.0742
+Clock:979.0742-> EOM for FU:2(4)
+Clock:979.0742-> FU:3(9) Orders> No free SUs! Resch FURQO at 980.7098
+Clock:980.7098-> Fire Mission! FU:5(4) Rounds:15
+Clock:980.7098-> FU:3(9) Orders> No free SUs! Resch FURQO at 984.0742
+Clock:984.0742-> Fire Mission! FU:2(4) Rounds:15
+Clock:984.0742-> FU:3(9) Orders> No free SUs! Resch FURQO at 984.4203
+Clock:984.4203-> FU:4(5) depart for Node:13 Arrive:1009.7984
+Clock:984.4203-> FU:3(9) Orders> No free SUs! Resch FURQO at 984.4598
+Clock:984.4598-> EOM for FU:5(4)
+Clock:984.4598-> FU:3(9) Orders> No free SUs! Resch FURQO at 987.8242
+Clock:987.8242-> EOM for FU:2(4)
+Clock:987.8242-> FU:3(9) Orders> No free SUs! Resch FURQO at 988.4598
+Clock:988.4598-> Fire Mission! FU:5(4) Rounds:13
+Clock:988.4598-> FU:3(9) Orders> No free SUs! Resch FURQO at 990.3822
+Clock:990.3822-> SU:1(1) resupplied at ATP SU now available
+Clock:990.3822-> FU:3(9) Orders> ReSply Typ:F Node:17 Dstn:17 SU:1(1)
+Clock:990.3822-> FU:3(9) depart for Node:17 Arrive:1007.0921
+Clock:990.3822-> SU:1(1) depart for Node:11 Arrive:999.0416
+Clock:991.7098-> EOM for FU:5(4)
+Clock:992.8242-> Fire Mission! FU:2(4) Rounds:7
+Clock:993.7098-> Fire Mission! FU:5(4) Rounds:14
+Clock:994.5742-> EOM for FU:2(4)
+Clock:995.0081-> FU:1(4) and SU:2(4) -> END Resupply
+Clock:997.0081-> Fire Mission! FU:1(4) Rounds:14
+Clock:997.2098-> EOM for FU:5(4)
+Clock:999.0416-> SU:1(11) depart for Node:7 Arrive:1008.0140
+Clock:1000.5081-> EOM for FU:1(4)
+FU: 1
+Firing:      98.50
+Moving:     373.36
+URSupplying:     126.67
+PRSupplying:       0.00
+FMWaiting:     286.00
+SplyWaiting:       2.84
+Number of Fire Missions: 27
+FU: 2
+Firing:     102.00
+Moving:     422.06
+URSupplying:     115.67
+PRSupplying:       0.00
+FMWaiting:     175.00
+SplyWaiting:       0.00
+Number of Fire Missions: 29
+FU: 3
+Firing:      55.25
+Moving:     167.71
+URSupplying:      56.67
+PRSupplying:       0.00
+FMWaiting:     128.00
+SplyWaiting:       0.00
+Number of Fire Missions: 15
+FU: 4
+Firing:      77.00
+Moving:     322.41
+URSupplying:      73.00
+PRSupplying:       0.00
+FMWaiting:     213.00
+SplyWaiting:      38.84
+Number of Fire Missions: 22
+FU: 5
+Firing:     128.00
+Moving:     348.64
+URSupplying:     144.00
+PRSupplying:       0.00
+FMWaiting:     310.00
+SplyWaiting:       0.00
+Number of Fire Missions: 37
+FU: 6
+Firing:     114.25
+Moving:     369.37
+URSupplying:     136.67
+PRSupplying:       0.00
+FMWaiting:     188.00
+SplyWaiting:      12.48
+Number of Fire Missions: 31
+SU: 1
+Firing:       0.00
+Moving:     260.67
+URSupplying:     194.00
+PRSupplying:       0.00
+FMWaiting:       0.00
+SplyWaiting:     458.89
+Total FU Resupply Missions: 9
+SU: 2
+Firing:       0.00
+Moving:     285.23
+URSupplying:     242.33
+PRSupplying:       0.00
+FMWaiting:       0.00
+SplyWaiting:     374.83
+Total FU Resupply Missions: 9
+SU: 3
+Firing:       0.00
+Moving:     238.36
+URSupplying:     216.33
+PRSupplying:       0.00
+FMWaiting:       0.00
+SplyWaiting:     399.69
+Total FU Resupply Missions: 9
+Total Number of Rounds Fired: 2300
